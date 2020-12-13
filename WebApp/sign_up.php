@@ -39,7 +39,7 @@
 </head>
 <body class="login-register">
     <div class="header_h1">
-            <h2>Register</h2>
+            <h2>Sign Up</h2>
     </div>
     <form class="login_register_form" method="post" action="sign_up.php">
         <?php include('error_success.php'); ?>

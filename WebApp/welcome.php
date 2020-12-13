@@ -81,7 +81,7 @@
             <button type="submit" name="login" class="button">Sign In</button>
         </div>
         <div class="row">
-            <p> Not a member? <a href="sign_up.php">Sign In</a>
+            <p> Not a member? <a href="sign_up.php">Sign Up</a>
         </div>
         
     </form>
