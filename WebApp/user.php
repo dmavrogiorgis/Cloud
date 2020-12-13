@@ -159,7 +159,7 @@
             </thead>
             <tbody>
                 <?php 
-                    if(count($data_array) > 0){
+                    if(is_array($data_array) || is_object($data_array)){
                         foreach($data_array as $movie) {
                 ?>
                 <tr>
