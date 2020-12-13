@@ -6,7 +6,7 @@
 </head>
 <body class="unauthorized_div">
     <div class="row">
-        <a name="unauthorized" class="unauthorized btn" href=http://172.18.1.7/welcome.php> Go To Sign In Form</a>
+        <a name="unauthorized" class="unauthorized btn" href=welcome.php> Go To Sign In Form</a>
     </div>
 
 </body>

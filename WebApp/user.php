@@ -145,7 +145,6 @@
                 curl_close($user_movies_curl);
                 
                 $data_array = json_decode($user_movies_response,true);
-                var_dump($data_array["id"]);
             ?>
             <thead>
                 <tr>

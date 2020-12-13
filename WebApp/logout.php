@@ -21,7 +21,7 @@
 </head>
 <body class="logout_div">
     <div class="row">
-        <a name="logout" class="logout btn" href=http://172.18.1.7/welcome.php> Go Back To Sign In Form</a>
+        <a name="logout" class="logout btn" href=welcome.php> Go Back To Sign In Form</a>
     </div>
 
 </body>
