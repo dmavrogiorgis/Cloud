@@ -64,6 +64,8 @@ services:
     build: 
       context: .
       dockerfile: ./AppLogic/Dockerfile
+    expose:
+      - "80"
     volumes:
       - ./AppLogic/:/var/www/html/
     networks:
