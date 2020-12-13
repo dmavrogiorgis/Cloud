@@ -81,7 +81,7 @@
                     
                     $data_array = json_decode($response,true);
 
-                    if(count($data_array) > 0){
+                    if(is_array($data_array) || is_object($data_array)){
                         foreach($data_array as $movie) {
                 ?>
                 <tr>
@@ -206,7 +206,7 @@
         function ajax_call(){
             var access_token = '<?php echo $_SESSION['access_token']?>';
             var user_id = '<?php echo $_SESSION['user_id']?>';
-            //console.log(user_id);
+
             $.ajax({
                 url: 'http://172.18.1.8/app_logic_notifications.php',
                 method: "GET",
@@ -239,7 +239,6 @@
                         if(new_notif[i].isComingSoon && !(new_notif[i].isPlaying)){
                             cell6.innerHTML = "This movie will be availiable in less than 10 days!";
                         }else if(!(new_notif[i].isComingSoon) && new_notif[i].isPlaying){
-                            console.log(!(new_notif[i].isComingSoon));
                             cell6.innerHTML = "This movie is availiable! Have fun!";
                         }else{
                             cell6.innerHTML = "This movie is not availiable! Sorry!";
@@ -278,8 +277,6 @@
                 var user_id = '<?php echo $_SESSION['user_id']?>';
                 var access_token = '<?php echo $_SESSION['access_token']?>';
                 var regex = $(this).val();
-
-                console.log(regex);
                 
                 $.ajax({
                     url: 'http://172.18.1.8/app_logic_mongo.php',
@@ -291,7 +288,6 @@
                         regex: regex
                     },
                     success: function(data) {
-                        console.log(data);
                         $('#movieTable').html(data);
                     }
                 });
