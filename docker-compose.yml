@@ -1,0 +1,208 @@
+version: "3.7"
+services:
+  #KEYROCK IDM
+  keyrock:
+    image: fiware/idm
+    container_name: keyrock
+    hostname: keyrock
+    depends_on:
+        - mysql_keyrock_db
+    ports:
+        - "3005:3005"
+    environment:
+      - DEBUG=idm:*
+      - IDM_DB_HOST=mysql_keyrock_db
+      - IDM_DB_PASS=rootpassword
+      - IDM_DB_USER=root
+      - IDM_PORT=3005
+      - IDM_HOST=http://172.18.1.5:3005
+      - IDM_ADMIN_USER=admin
+      - IDM_ADMIN_EMAIL=admin@test.com
+      - IDM_ADMIN_PASS=1234
+    networks:
+      default:
+        ipv4_address: 172.18.1.5
+    healthcheck:
+      test: curl --fail -s http://keyrock:3005/version || exit 1
+  #KEYROCK MYSQL DATABASE
+  mysql_keyrock_db:
+    restart: always
+    image: mysql:5.7
+    hostname: mysql_keyrock_db
+    container_name: mysql_keyrock_db
+    expose:
+      - "3306"
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_ROOT_HOST=172.18.1.5
+      - MYSQL_DATABASE=idm
+    networks:
+      default:
+        ipv4_address: 172.18.1.6
+    volumes:
+      - mysql_keyrock_db_vol:/var/lib/mysql
+      - ./db_backups/mysql_backup:/docker-entrypoint-initdb.d
+  #WEB APP
+  web_app:
+    build: 
+      context: .
+      dockerfile: ./WebApp/Dockerfile
+    depends_on: 
+      - app_logic
+    volumes:
+      - ./WebApp/:/var/www/html/
+    ports:
+      - "30001:80"
+    networks:
+      default:
+        ipv4_address: 172.18.1.7
+    container_name: web_app
+  #APP LOGIC
+  app_logic:
+    build: 
+      context: .
+      dockerfile: ./AppLogic/Dockerfile
+    volumes:
+      - ./AppLogic/:/var/www/html/
+    networks:
+      default:
+        ipv4_address: 172.18.1.8
+    container_name: app_logic
+  #DATA STORAGE PEP PROXY
+  data_storage_pep_proxy:
+    image: fiware/pep-proxy
+    container_name: data_storage_pep_proxy
+    hostname: data_storage_pep_proxy
+    depends_on:
+      - keyrock
+    restart: always
+    ports:
+      - "1029:1029"
+    expose:
+      - "1029"
+    environment:
+      - PEP_PROXY_APP_HOST=data_storage
+      - PEP_PROXY_APP_PORT=80
+      - PEP_PROXY_PORT=1029
+      - PEP_PROXY_IDM_HOST=keyrock
+      - PEP_PROXY_HTTPS_ENABLED=false
+      - PEP_PROXY_AUTH_ENABLED=false
+      - PEP_PROXY_IDM_SSL_ENABLED=false
+      - PEP_PROXY_IDM_PORT=3005
+      - PEP_PROXY_APP_ID=74812fd6-51be-43f0-96e3-65034ee2f190
+      - PEP_PROXY_USERNAME=pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69
+      - PEP_PASSWORD=pep_proxy_867aed52-b842-4325-8ddd-8cd48831f134
+      - PEP_PROXY_PDP=idm
+      - PEP_PROXY_MAGIC_KEY=pep_proxy_867aed52-b842-4325-8ddd-8cd48831f134
+      - PEP_PROXY_PUBLIC_PATHS=/version
+    networks:
+      default:
+        ipv4_address: 172.18.1.14
+  #DATA STORAGE
+  data_storage:
+    build: 
+      context: .
+      dockerfile: ./DataStorage/Dockerfile
+    depends_on: 
+      - mongo_db
+    expose:
+      - "80"
+    volumes:
+      - ./DataStorage/:/var/www/html/
+    networks:
+      default:
+        ipv4_address: 172.18.1.9
+    container_name: data_storage
+  #MONGO DB
+  mongo_db:
+    image: "mongo"
+    container_name: "mongo_db"
+    restart: always
+    ports: 
+      - "27017:27017"
+    networks:
+      default:
+        ipv4_address: 172.18.1.10
+    volumes: 
+      - mongo_vol:/data/db
+  #ORION PEP PROXY
+  orion_pep_proxy:
+    image: fiware/pep-proxy
+    container_name: orion_pep_proxy
+    hostname: orion_pep_proxy
+    depends_on:
+      - keyrock
+    restart: always
+    ports:
+      - "1027:1027" 
+    expose:
+      - "1027"
+    environment:
+      - PEP_PROXY_APP_HOST=orion
+      - PEP_PROXY_APP_PORT=1026
+      - PEP_PROXY_PORT=1027
+      - PEP_PROXY_IDM_HOST=keyrock
+      - PEP_PROXY_HTTPS_ENABLED=false
+      - PEP_PROXY_AUTH_ENABLED=false
+      - PEP_PROXY_IDM_SSL_ENABLED=false
+      - PEP_PROXY_IDM_PORT=3005
+      - PEP_PROXY_APP_ID=74812fd6-51be-43f0-96e3-65034ee2f190
+      - PEP_PROXY_USERNAME=pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69
+      - PEP_PASSWORD=pep_proxy_867aed52-b842-4325-8ddd-8cd48831f134
+      - PEP_PROXY_PDP=idm
+      - PEP_PROXY_MAGIC_KEY=pep_proxy_867aed52-b842-4325-8ddd-8cd48831f134
+      - PEP_PROXY_PUBLIC_PATHS=/version
+    networks:
+      default:
+        ipv4_address: 172.18.1.13
+  #ORION CONTEXT BROKER
+  orion:
+    image: fiware/orion
+    container_name: fiware_orion
+    depends_on:
+      - mongo_db_orion
+    networks:
+      - default
+    expose:
+      - "1026"
+    ports:
+      - "1026:1026"
+    command: -dbhost mongo_db_orion -logLevel DEBUG
+    networks:
+      default:
+        ipv4_address: 172.18.1.11
+    healthcheck:
+      test: curl --fail -s http://orion:1026/version || exit 1
+  #MONGO DB ORION
+  mongo_db_orion:
+    image: "mongo"
+    container_name: "mongo_db_orion"
+    restart: always
+    networks:
+      default:
+        ipv4_address: 172.18.1.12
+    volumes: 
+      - mongo_orion_vol:/data/db
+  #RESTORE MONGO DB
+  mongo_restore:
+    container_name: mongo_restore
+    image: mongo
+    links:
+      - mongo_db
+    volumes:
+      - ./db_backups/mongodb_backup:/mongo_restore
+    command:
+      /mongo_restore/restore_my_mongodb.sh
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.18.1.0/24
+
+volumes: 
+  mysql_keyrock_db_vol: 
+  mongo_vol:
+  mongo_orion_vol:

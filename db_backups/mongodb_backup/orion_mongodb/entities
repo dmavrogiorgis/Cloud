@@ -1,0 +1,3658 @@
+[{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0334",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.0802574,
+      "modDate": 1607096563.0802574,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.0802574,
+      "modDate": 1607096563.0802574,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.0802574,
+      "modDate": 1607096563.0802574,
+      "value": "The Road Warrior",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.0802574,
+      "modDate": 1607096563.0802574,
+      "value": "2020-10-30",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.0802574,
+      "modDate": 1607096563.0802574,
+      "value": "2020-11-06",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.0802574,
+      "modDate": 1607096563.0802574,
+      "value": "5fae6767d66b1e67456b037e",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.0802574,
+      "modDate": 1607096563.0802574,
+      "value": "Action",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.0802574,
+  "modDate": 1607096563.0802574,
+  "lastCorrelator": "59202d80-3647-11eb-979b-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0335",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.0847843,
+      "modDate": 1607096563.0847843,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.0847843,
+      "modDate": 1607096563.0847843,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.0847843,
+      "modDate": 1607096563.0847843,
+      "value": "E.T. - The Extra-Terrestrial",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.0847843,
+      "modDate": 1607096563.0847843,
+      "value": "2020-11-01",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.0847843,
+      "modDate": 1607096563.0847843,
+      "value": "2020-11-05",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.0847843,
+      "modDate": 1607096563.0847843,
+      "value": "5fae6767d66b1e67456b037d",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.0847843,
+      "modDate": 1607096563.0847843,
+      "value": "Fantasy",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.0847843,
+  "modDate": 1607096563.0847843,
+  "lastCorrelator": "5920e996-3647-11eb-8e81-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0336",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.0896707,
+      "modDate": 1607096563.0896707,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.0896707,
+      "modDate": 1607096563.0896707,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.0896707,
+      "modDate": 1607096563.0896707,
+      "value": "King Kong",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.0896707,
+      "modDate": 1607096563.0896707,
+      "value": "2020-11-02",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.0896707,
+      "modDate": 1607096563.0896707,
+      "value": "2020-11-03",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.0896707,
+      "modDate": 1607096563.0896707,
+      "value": "5fae6767d66b1e67456b037c",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.0896707,
+      "modDate": 1607096563.0896707,
+      "value": "Adventure",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.0896707,
+  "modDate": 1607096563.0896707,
+  "lastCorrelator": "5921a886-3647-11eb-8686-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0337",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.0980504,
+      "modDate": 1607096563.0980504,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.0980504,
+      "modDate": 1607096563.0980504,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.0980504,
+      "modDate": 1607096563.0980504,
+      "value": "The Maltese Falcon",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.0980504,
+      "modDate": 1607096563.0980504,
+      "value": "2020-11-01",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.0980504,
+      "modDate": 1607096563.0980504,
+      "value": "2020-12-01",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.0980504,
+      "modDate": 1607096563.0980504,
+      "value": "5fae6767d66b1e67456b037b",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.0980504,
+      "modDate": 1607096563.0980504,
+      "value": "Film Noir",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.0980504,
+  "modDate": 1607096563.0980504,
+  "lastCorrelator": "5922cfe0-3647-11eb-83ce-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0338",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.10291,
+      "modDate": 1607096563.10291,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.10291,
+      "modDate": 1607096563.10291,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.10291,
+      "modDate": 1607096563.10291,
+      "value": "Snow White and the Seven Dwarfs",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.10291,
+      "modDate": 1607096563.10291,
+      "value": "2020-10-31",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.10291,
+      "modDate": 1607096563.10291,
+      "value": "2020-11-04",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.10291,
+      "modDate": 1607096563.10291,
+      "value": "5fae6767d66b1e67456b037a",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.10291,
+      "modDate": 1607096563.10291,
+      "value": "Animated",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.10291,
+  "modDate": 1607096563.10291,
+  "lastCorrelator": "5923b00e-3647-11eb-8892-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0339",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1074178,
+      "modDate": 1607096563.1074178,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1074178,
+      "modDate": 1607096563.1074178,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1074178,
+      "modDate": 1607096563.1074178,
+      "value": "Psycho",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1074178,
+      "modDate": 1607096563.1074178,
+      "value": "2020-11-07",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1074178,
+      "modDate": 1607096563.1074178,
+      "value": "2020-11-13",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1074178,
+      "modDate": 1607096563.1074178,
+      "value": "5fae6767d66b1e67456b037e",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1074178,
+      "modDate": 1607096563.1074178,
+      "value": "Horror",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1074178,
+  "modDate": 1607096563.1074178,
+  "lastCorrelator": "59246076-3647-11eb-8bef-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b033a",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1149435,
+      "modDate": 1607096563.1149435,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1149435,
+      "modDate": 1607096563.1149435,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1149435,
+      "modDate": 1607096563.1149435,
+      "value": "Lawrence of Arabia",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1149435,
+      "modDate": 1607096563.1149435,
+      "value": "2020-11-08",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1149435,
+      "modDate": 1607096563.1149435,
+      "value": "2020-11-12",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1149435,
+      "modDate": 1607096563.1149435,
+      "value": "5fae6767d66b1e67456b037d",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1149435,
+      "modDate": 1607096563.1149435,
+      "value": "Biopic",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1149435,
+  "modDate": 1607096563.1149435,
+  "lastCorrelator": "59258370-3647-11eb-aa85-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b033b",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1195166,
+      "modDate": 1607096563.1195166,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1195166,
+      "modDate": 1607096563.1195166,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1195166,
+      "modDate": 1607096563.1195166,
+      "value": "Top Hat",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1195166,
+      "modDate": 1607096563.1195166,
+      "value": "2020-11-09",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1195166,
+      "modDate": 1607096563.1195166,
+      "value": "2020-11-11",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1195166,
+      "modDate": 1607096563.1195166,
+      "value": "5fae6767d66b1e67456b037c",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1195166,
+      "modDate": 1607096563.1195166,
+      "value": "Musical-Dance",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1195166,
+  "modDate": 1607096563.1195166,
+  "lastCorrelator": "592636b2-3647-11eb-87bd-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b033c",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1243327,
+      "modDate": 1607096563.1243327,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1243327,
+      "modDate": 1607096563.1243327,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1243327,
+      "modDate": 1607096563.1243327,
+      "value": "Duck Soup",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1243327,
+      "modDate": 1607096563.1243327,
+      "value": "2020-11-08",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1243327,
+      "modDate": 1607096563.1243327,
+      "value": "2020-11-11",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1243327,
+      "modDate": 1607096563.1243327,
+      "value": "5fae6767d66b1e67456b037b",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1243327,
+      "modDate": 1607096563.1243327,
+      "value": "Comedy",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1243327,
+  "modDate": 1607096563.1243327,
+  "lastCorrelator": "5926f444-3647-11eb-a6b8-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b033d",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1316023,
+      "modDate": 1607096563.1316023,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1316023,
+      "modDate": 1607096563.1316023,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1316023,
+      "modDate": 1607096563.1316023,
+      "value": "Casablanca",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1316023,
+      "modDate": 1607096563.1316023,
+      "value": "2020-11-09",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1316023,
+      "modDate": 1607096563.1316023,
+      "value": "2020-11-13",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1316023,
+      "modDate": 1607096563.1316023,
+      "value": "5fae6767d66b1e67456b037a",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1316023,
+      "modDate": 1607096563.1316023,
+      "value": "Romance",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1316023,
+  "modDate": 1607096563.1316023,
+  "lastCorrelator": "59280c80-3647-11eb-8584-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b033e",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1361053,
+      "modDate": 1607096563.1361053,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1361053,
+      "modDate": 1607096563.1361053,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1361053,
+      "modDate": 1607096563.1361053,
+      "value": "Aliens",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1361053,
+      "modDate": 1607096563.1361053,
+      "value": "2020-11-14",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1361053,
+      "modDate": 1607096563.1361053,
+      "value": "2020-11-20",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1361053,
+      "modDate": 1607096563.1361053,
+      "value": "5fae6767d66b1e67456b036b",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1361053,
+      "modDate": 1607096563.1361053,
+      "value": "Action",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1361053,
+  "modDate": 1607096563.1361053,
+  "lastCorrelator": "5928c53a-3647-11eb-b871-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b033f",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1415107,
+      "modDate": 1607096563.1415107,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1415107,
+      "modDate": 1607096563.1415107,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1415107,
+      "modDate": 1607096563.1415107,
+      "value": "The Princess Bride",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1415107,
+      "modDate": 1607096563.1415107,
+      "value": "2020-11-15",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1415107,
+      "modDate": 1607096563.1415107,
+      "value": "2020-11-19",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1415107,
+      "modDate": 1607096563.1415107,
+      "value": "5fae6767d66b1e67456b036c",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1415107,
+      "modDate": 1607096563.1415107,
+      "value": "Fantasy",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1415107,
+  "modDate": 1607096563.1415107,
+  "lastCorrelator": "59298e84-3647-11eb-b2cb-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0340",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1477885,
+      "modDate": 1607096563.1477885,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1477885,
+      "modDate": 1607096563.1477885,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1477885,
+      "modDate": 1607096563.1477885,
+      "value": "The Adventures of Robin Hood",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1477885,
+      "modDate": 1607096563.1477885,
+      "value": "2020-11-16",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1477885,
+      "modDate": 1607096563.1477885,
+      "value": "2020-11-18",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1477885,
+      "modDate": 1607096563.1477885,
+      "value": "5fae6767d66b1e67456b036d",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1477885,
+      "modDate": 1607096563.1477885,
+      "value": "Adventure",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1477885,
+  "modDate": 1607096563.1477885,
+  "lastCorrelator": "592a8460-3647-11eb-bafd-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0341",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1522353,
+      "modDate": 1607096563.1522353,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1522353,
+      "modDate": 1607096563.1522353,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1522353,
+      "modDate": 1607096563.1522353,
+      "value": "Double Indemnity",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1522353,
+      "modDate": 1607096563.1522353,
+      "value": "2020-11-15",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1522353,
+      "modDate": 1607096563.1522353,
+      "value": "2020-11-19",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1522353,
+      "modDate": 1607096563.1522353,
+      "value": "5fae6767d66b1e67456b036e",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1522353,
+      "modDate": 1607096563.1522353,
+      "value": "Film Noir",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1522353,
+  "modDate": 1607096563.1522353,
+  "lastCorrelator": "592b3680-3647-11eb-af93-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0342",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1582198,
+      "modDate": 1607096563.1582198,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1582198,
+      "modDate": 1607096563.1582198,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1582198,
+      "modDate": 1607096563.1582198,
+      "value": "Fantasia",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1582198,
+      "modDate": 1607096563.1582198,
+      "value": "2020-11-15",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1582198,
+      "modDate": 1607096563.1582198,
+      "value": "2020-11-20",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1582198,
+      "modDate": 1607096563.1582198,
+      "value": "5fae6767d66b1e67456b036f",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1582198,
+      "modDate": 1607096563.1582198,
+      "value": "Animated",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1582198,
+  "modDate": 1607096563.1582198,
+  "lastCorrelator": "592c1474-3647-11eb-82c2-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0343",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1632805,
+      "modDate": 1607096563.1632805,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1632805,
+      "modDate": 1607096563.1632805,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1632805,
+      "modDate": 1607096563.1632805,
+      "value": "Rosemary`s Baby",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1632805,
+      "modDate": 1607096563.1632805,
+      "value": "2020-11-21",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1632805,
+      "modDate": 1607096563.1632805,
+      "value": "2020-11-27",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1632805,
+      "modDate": 1607096563.1632805,
+      "value": "5fae6767d66b1e67456b036b",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1632805,
+      "modDate": 1607096563.1632805,
+      "value": "Horror",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1632805,
+  "modDate": 1607096563.1632805,
+  "lastCorrelator": "592ce6c4-3647-11eb-90b0-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0344",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1679316,
+      "modDate": 1607096563.1679316,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1679316,
+      "modDate": 1607096563.1679316,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1679316,
+      "modDate": 1607096563.1679316,
+      "value": "Patton",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1679316,
+      "modDate": 1607096563.1679316,
+      "value": "2020-11-22",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1679316,
+      "modDate": 1607096563.1679316,
+      "value": "2020-11-26",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1679316,
+      "modDate": 1607096563.1679316,
+      "value": "5fae6767d66b1e67456b036c",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1679316,
+      "modDate": 1607096563.1679316,
+      "value": "Biopic",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1679316,
+  "modDate": 1607096563.1679316,
+  "lastCorrelator": "592d9d9e-3647-11eb-938b-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0345",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1723888,
+      "modDate": 1607096563.1723888,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1723888,
+      "modDate": 1607096563.1723888,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1723888,
+      "modDate": 1607096563.1723888,
+      "value": "The Wizard of Oz",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1723888,
+      "modDate": 1607096563.1723888,
+      "value": "2020-11-23",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1723888,
+      "modDate": 1607096563.1723888,
+      "value": "2020-11-18",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1723888,
+      "modDate": 1607096563.1723888,
+      "value": "5fae6767d66b1e67456b036d",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1723888,
+      "modDate": 1607096563.1723888,
+      "value": "Musical-Dance",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1723888,
+  "modDate": 1607096563.1723888,
+  "lastCorrelator": "592e488e-3647-11eb-b4f1-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0346",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1772978,
+      "modDate": 1607096563.1772978,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1772978,
+      "modDate": 1607096563.1772978,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1772978,
+      "modDate": 1607096563.1772978,
+      "value": "Some Like It Hot",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1772978,
+      "modDate": 1607096563.1772978,
+      "value": "2020-11-23",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1772978,
+      "modDate": 1607096563.1772978,
+      "value": "2020-11-26",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1772978,
+      "modDate": 1607096563.1772978,
+      "value": "5fae6767d66b1e67456b036e",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1772978,
+      "modDate": 1607096563.1772978,
+      "value": "Comedy",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1772978,
+  "modDate": 1607096563.1772978,
+  "lastCorrelator": "592f0684-3647-11eb-8f3a-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0347",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.182046,
+      "modDate": 1607096563.182046,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.182046,
+      "modDate": 1607096563.182046,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.182046,
+      "modDate": 1607096563.182046,
+      "value": "Brief Encounter",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.182046,
+      "modDate": 1607096563.182046,
+      "value": "2020-11-23",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.182046,
+      "modDate": 1607096563.182046,
+      "value": "2020-11-25",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.182046,
+      "modDate": 1607096563.182046,
+      "value": "5fae6767d66b1e67456b036f",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.182046,
+      "modDate": 1607096563.182046,
+      "value": "Romance",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.182046,
+  "modDate": 1607096563.182046,
+  "lastCorrelator": "592fbe94-3647-11eb-bb09-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0348",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1866188,
+      "modDate": 1607096563.1866188,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1866188,
+      "modDate": 1607096563.1866188,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1866188,
+      "modDate": 1607096563.1866188,
+      "value": "Die Hard",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1866188,
+      "modDate": 1607096563.1866188,
+      "value": "2020-11-28",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1866188,
+      "modDate": 1607096563.1866188,
+      "value": "2020-12-04",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1866188,
+      "modDate": 1607096563.1866188,
+      "value": "5fae6767d66b1e67456b0370",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1866188,
+      "modDate": 1607096563.1866188,
+      "value": "Action",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1866188,
+  "modDate": 1607096563.1866188,
+  "lastCorrelator": "593074d8-3647-11eb-8824-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0349",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1913996,
+      "modDate": 1607096563.1913996,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1913996,
+      "modDate": 1607096563.1913996,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1913996,
+      "modDate": 1607096563.1913996,
+      "value": "Harry Potter Franchise",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1913996,
+      "modDate": 1607096563.1913996,
+      "value": "2020-11-29",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1913996,
+      "modDate": 1607096563.1913996,
+      "value": "2020-12-03",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1913996,
+      "modDate": 1607096563.1913996,
+      "value": "5fae6767d66b1e67456b0371",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1913996,
+      "modDate": 1607096563.1913996,
+      "value": "Fantasy",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1913996,
+  "modDate": 1607096563.1913996,
+  "lastCorrelator": "59312ca2-3647-11eb-a1f2-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b034a",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.1957953,
+      "modDate": 1607096563.1957953,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.1957953,
+      "modDate": 1607096563.1957953,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.1957953,
+      "modDate": 1607096563.1957953,
+      "value": "The Treasure of the Sierra Madre",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.1957953,
+      "modDate": 1607096563.1957953,
+      "value": "2020-11-30",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.1957953,
+      "modDate": 1607096563.1957953,
+      "value": "2020-12-04",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.1957953,
+      "modDate": 1607096563.1957953,
+      "value": "5fae6767d66b1e67456b0373",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.1957953,
+      "modDate": 1607096563.1957953,
+      "value": "Adventure",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.1957953,
+  "modDate": 1607096563.1957953,
+  "lastCorrelator": "5931d7ba-3647-11eb-b250-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b034b",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2004213,
+      "modDate": 1607096563.2004213,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2004213,
+      "modDate": 1607096563.2004213,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2004213,
+      "modDate": 1607096563.2004213,
+      "value": "Murder, My Sweet",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2004213,
+      "modDate": 1607096563.2004213,
+      "value": "2020-11-29",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2004213,
+      "modDate": 1607096563.2004213,
+      "value": "2020-12-02",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2004213,
+      "modDate": 1607096563.2004213,
+      "value": "5fae6767d66b1e67456b0374",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2004213,
+      "modDate": 1607096563.2004213,
+      "value": "Film Noir",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2004213,
+  "modDate": 1607096563.2004213,
+  "lastCorrelator": "5932920e-3647-11eb-b6d7-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b034c",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2053728,
+      "modDate": 1607096563.2053728,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2053728,
+      "modDate": 1607096563.2053728,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2053728,
+      "modDate": 1607096563.2053728,
+      "value": "Beauty and the Beast",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2053728,
+      "modDate": 1607096563.2053728,
+      "value": "2020-11-30",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2053728,
+      "modDate": 1607096563.2053728,
+      "value": "2020-12-04",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2053728,
+      "modDate": 1607096563.2053728,
+      "value": "5fae6767d66b1e67456b0372",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2053728,
+      "modDate": 1607096563.2053728,
+      "value": "Animated",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2053728,
+  "modDate": 1607096563.2053728,
+  "lastCorrelator": "59334c08-3647-11eb-bccf-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b034d",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2099364,
+      "modDate": 1607096563.2099364,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2099364,
+      "modDate": 1607096563.2099364,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2099364,
+      "modDate": 1607096563.2099364,
+      "value": "The Exorcist",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2099364,
+      "modDate": 1607096563.2099364,
+      "value": "2020-11-28",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2099364,
+      "modDate": 1607096563.2099364,
+      "value": "2020-12-04",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2099364,
+      "modDate": 1607096563.2099364,
+      "value": "5fae6767d66b1e67456b0370",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2099364,
+      "modDate": 1607096563.2099364,
+      "value": "Horror",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2099364,
+  "modDate": 1607096563.2099364,
+  "lastCorrelator": "59340562-3647-11eb-939d-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b034e",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2146199,
+      "modDate": 1607096563.2146199,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2146199,
+      "modDate": 1607096563.2146199,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2146199,
+      "modDate": 1607096563.2146199,
+      "value": "Amadeus",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2146199,
+      "modDate": 1607096563.2146199,
+      "value": "2020-11-29",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2146199,
+      "modDate": 1607096563.2146199,
+      "value": "2020-12-03",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2146199,
+      "modDate": 1607096563.2146199,
+      "value": "5fae6767d66b1e67456b0371",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2146199,
+      "modDate": 1607096563.2146199,
+      "value": "Biopic",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2146199,
+  "modDate": 1607096563.2146199,
+  "lastCorrelator": "5934b976-3647-11eb-a69e-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b034f",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2193847,
+      "modDate": 1607096563.2193847,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2193847,
+      "modDate": 1607096563.2193847,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2193847,
+      "modDate": 1607096563.2193847,
+      "value": "Singin` in the Rain",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2193847,
+      "modDate": 1607096563.2193847,
+      "value": "2020-11-30",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2193847,
+      "modDate": 1607096563.2193847,
+      "value": "2020-12-03",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2193847,
+      "modDate": 1607096563.2193847,
+      "value": "5fae6767d66b1e67456b0373",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2193847,
+      "modDate": 1607096563.2193847,
+      "value": "Musical-Dance",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2193847,
+  "modDate": 1607096563.2193847,
+  "lastCorrelator": "593575b4-3647-11eb-9616-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0350",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2239432,
+      "modDate": 1607096563.2239432,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2239432,
+      "modDate": 1607096563.2239432,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2239432,
+      "modDate": 1607096563.2239432,
+      "value": "Dr. Strangelove, Or:...",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2239432,
+      "modDate": 1607096563.2239432,
+      "value": "2020-11-29",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2239432,
+      "modDate": 1607096563.2239432,
+      "value": "2020-11-06",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2239432,
+      "modDate": 1607096563.2239432,
+      "value": "5fae6767d66b1e67456b0374",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2239432,
+      "modDate": 1607096563.2239432,
+      "value": "Comedy",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2239432,
+  "modDate": 1607096563.2239432,
+  "lastCorrelator": "593627de-3647-11eb-a388-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0351",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2283235,
+      "modDate": 1607096563.2283235,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2283235,
+      "modDate": 1607096563.2283235,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2283235,
+      "modDate": 1607096563.2283235,
+      "value": "Roman Holiday",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2283235,
+      "modDate": 1607096563.2283235,
+      "value": "2020-11-29",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2283235,
+      "modDate": 1607096563.2283235,
+      "value": "2020-12-01",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2283235,
+      "modDate": 1607096563.2283235,
+      "value": "5fae6767d66b1e67456b0372",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2283235,
+      "modDate": 1607096563.2283235,
+      "value": "Romance",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2283235,
+  "modDate": 1607096563.2283235,
+  "lastCorrelator": "5936d2c4-3647-11eb-b8a0-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0352",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2327206,
+      "modDate": 1607096563.2327206,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2327206,
+      "modDate": 1607096563.2327206,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2327206,
+      "modDate": 1607096563.2327206,
+      "value": "Terminator 2: Judgment Day",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2327206,
+      "modDate": 1607096563.2327206,
+      "value": "2020-11-28",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2327206,
+      "modDate": 1607096563.2327206,
+      "value": "2020-12-01",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2327206,
+      "modDate": 1607096563.2327206,
+      "value": "5fae6767d66b1e67456b0366",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2327206,
+      "modDate": 1607096563.2327206,
+      "value": "Action",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2327206,
+  "modDate": 1607096563.2327206,
+  "lastCorrelator": "593781e2-3647-11eb-b73f-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0353",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.237018,
+      "modDate": 1607096563.237018,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.237018,
+      "modDate": 1607096563.237018,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.237018,
+      "modDate": 1607096563.237018,
+      "value": "The Lord of the Rings Trilogy",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.237018,
+      "modDate": 1607096563.237018,
+      "value": "2020-11-29",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.237018,
+      "modDate": 1607096563.237018,
+      "value": "2020-12-02",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.237018,
+      "modDate": 1607096563.237018,
+      "value": "5fae6767d66b1e67456b036a",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.237018,
+      "modDate": 1607096563.237018,
+      "value": "Fantasy",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.237018,
+  "modDate": 1607096563.237018,
+  "lastCorrelator": "5938217e-3647-11eb-a2aa-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0354",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2418478,
+      "modDate": 1607096563.2418478,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2418478,
+      "modDate": 1607096563.2418478,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2418478,
+      "modDate": 1607096563.2418478,
+      "value": "Raiders of the Lost Ark",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2418478,
+      "modDate": 1607096563.2418478,
+      "value": "2020-11-29",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2418478,
+      "modDate": 1607096563.2418478,
+      "value": "2020-12-02",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2418478,
+      "modDate": 1607096563.2418478,
+      "value": "5fae6767d66b1e67456b0369",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2418478,
+      "modDate": 1607096563.2418478,
+      "value": "Adventure",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2418478,
+  "modDate": 1607096563.2418478,
+  "lastCorrelator": "5938e4e2-3647-11eb-bab3-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0355",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2459562,
+      "modDate": 1607096563.2459562,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2459562,
+      "modDate": 1607096563.2459562,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2459562,
+      "modDate": 1607096563.2459562,
+      "value": "Sunset Boulevard",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2459562,
+      "modDate": 1607096563.2459562,
+      "value": "2020-12-03",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2459562,
+      "modDate": 1607096563.2459562,
+      "value": "2020-12-04",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2459562,
+      "modDate": 1607096563.2459562,
+      "value": "5fae6767d66b1e67456b0368",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2459562,
+      "modDate": 1607096563.2459562,
+      "value": "Film Noir",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2459562,
+  "modDate": 1607096563.2459562,
+  "lastCorrelator": "593980c8-3647-11eb-8db9-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0356",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2502415,
+      "modDate": 1607096563.2502415,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2502415,
+      "modDate": 1607096563.2502415,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2502415,
+      "modDate": 1607096563.2502415,
+      "value": "Toy Story",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2502415,
+      "modDate": 1607096563.2502415,
+      "value": "2020-11-29",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2502415,
+      "modDate": 1607096563.2502415,
+      "value": "2020-11-03",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2502415,
+      "modDate": 1607096563.2502415,
+      "value": "5fae6767d66b1e67456b0367",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2502415,
+      "modDate": 1607096563.2502415,
+      "value": "Animated",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2502415,
+  "modDate": 1607096563.2502415,
+  "lastCorrelator": "593a2870-3647-11eb-9f97-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0357",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2549238,
+      "modDate": 1607096563.2549238,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2549238,
+      "modDate": 1607096563.2549238,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2549238,
+      "modDate": 1607096563.2549238,
+      "value": "Halloween",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2549238,
+      "modDate": 1607096563.2549238,
+      "value": "2020-12-05",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2549238,
+      "modDate": 1607096563.2549238,
+      "value": "2020-12-11",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2549238,
+      "modDate": 1607096563.2549238,
+      "value": "5fae6767d66b1e67456b0366",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2549238,
+      "modDate": 1607096563.2549238,
+      "value": "Horror",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2549238,
+  "modDate": 1607096563.2549238,
+  "lastCorrelator": "593ae0a8-3647-11eb-a2b1-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0358",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2596595,
+      "modDate": 1607096563.2596595,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2596595,
+      "modDate": 1607096563.2596595,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2596595,
+      "modDate": 1607096563.2596595,
+      "value": "Malcolm X",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2596595,
+      "modDate": 1607096563.2596595,
+      "value": "2020-12-06",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2596595,
+      "modDate": 1607096563.2596595,
+      "value": "2020-12-10",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2596595,
+      "modDate": 1607096563.2596595,
+      "value": "5fae6767d66b1e67456b036a",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2596595,
+      "modDate": 1607096563.2596595,
+      "value": "Biopic",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2596595,
+  "modDate": 1607096563.2596595,
+  "lastCorrelator": "593b9a02-3647-11eb-b241-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0359",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2640777,
+      "modDate": 1607096563.2640777,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2640777,
+      "modDate": 1607096563.2640777,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2640777,
+      "modDate": 1607096563.2640777,
+      "value": "My Fair Lady",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2640777,
+      "modDate": 1607096563.2640777,
+      "value": "2020-12-06",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2640777,
+      "modDate": 1607096563.2640777,
+      "value": "2020-12-09",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2640777,
+      "modDate": 1607096563.2640777,
+      "value": "5fae6767d66b1e67456b0369",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2640777,
+      "modDate": 1607096563.2640777,
+      "value": "Musical-Dance",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2640777,
+  "modDate": 1607096563.2640777,
+  "lastCorrelator": "593c4ad8-3647-11eb-ba37-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b035a",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2679572,
+      "modDate": 1607096563.2679572,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2679572,
+      "modDate": 1607096563.2679572,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2679572,
+      "modDate": 1607096563.2679572,
+      "value": "Monty Python and the Holy Grail",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2679572,
+      "modDate": 1607096563.2679572,
+      "value": "2020-12-05",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2679572,
+      "modDate": 1607096563.2679572,
+      "value": "2020-12-08",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2679572,
+      "modDate": 1607096563.2679572,
+      "value": "5fae6767d66b1e67456b0368",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2679572,
+      "modDate": 1607096563.2679572,
+      "value": "Comedy",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2679572,
+  "modDate": 1607096563.2679572,
+  "lastCorrelator": "593ce33a-3647-11eb-8873-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b035b",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2723033,
+      "modDate": 1607096563.2723033,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2723033,
+      "modDate": 1607096563.2723033,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2723033,
+      "modDate": 1607096563.2723033,
+      "value": "Annie Hall",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2723033,
+      "modDate": 1607096563.2723033,
+      "value": "2020-12-06",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2723033,
+      "modDate": 1607096563.2723033,
+      "value": "2020-12-11",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2723033,
+      "modDate": 1607096563.2723033,
+      "value": "5fae6767d66b1e67456b0367",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2723033,
+      "modDate": 1607096563.2723033,
+      "value": "Romance",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2723033,
+  "modDate": 1607096563.2723033,
+  "lastCorrelator": "593d879a-3647-11eb-9f66-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b035c",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.277378,
+      "modDate": 1607096563.277378,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.277378,
+      "modDate": 1607096563.277378,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.277378,
+      "modDate": 1607096563.277378,
+      "value": "Casino Royale",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.277378,
+      "modDate": 1607096563.277378,
+      "value": "2020-12-12",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.277378,
+      "modDate": 1607096563.277378,
+      "value": "2020-12-18",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.277378,
+      "modDate": 1607096563.277378,
+      "value": "5fae6767d66b1e67456b0375",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.277378,
+      "modDate": 1607096563.277378,
+      "value": "Action",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.277378,
+  "modDate": 1607096563.277378,
+  "lastCorrelator": "593e4554-3647-11eb-bedb-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b035d",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.282241,
+      "modDate": 1607096563.282241,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.282241,
+      "modDate": 1607096563.282241,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.282241,
+      "modDate": 1607096563.282241,
+      "value": "Pan`s Labyrinth",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.282241,
+      "modDate": 1607096563.282241,
+      "value": "2020-12-13",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.282241,
+      "modDate": 1607096563.282241,
+      "value": "2020-12-17",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.282241,
+      "modDate": 1607096563.282241,
+      "value": "5fae6767d66b1e67456b0376",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.282241,
+      "modDate": 1607096563.282241,
+      "value": "Fantasy",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.282241,
+  "modDate": 1607096563.282241,
+  "lastCorrelator": "593f093a-3647-11eb-890e-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b035e",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2868161,
+      "modDate": 1607096563.2868161,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2868161,
+      "modDate": 1607096563.2868161,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2868161,
+      "modDate": 1607096563.2868161,
+      "value": "Jurassic Park",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2868161,
+      "modDate": 1607096563.2868161,
+      "value": "2020-12-14",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2868161,
+      "modDate": 1607096563.2868161,
+      "value": "2020-12-16",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2868161,
+      "modDate": 1607096563.2868161,
+      "value": "5fae6767d66b1e67456b0377",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2868161,
+      "modDate": 1607096563.2868161,
+      "value": "Adventure",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2868161,
+  "modDate": 1607096563.2868161,
+  "lastCorrelator": "593fbc90-3647-11eb-bfc6-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b035f",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2917404,
+      "modDate": 1607096563.2917404,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2917404,
+      "modDate": 1607096563.2917404,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2917404,
+      "modDate": 1607096563.2917404,
+      "value": "Touch of Evil",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2917404,
+      "modDate": 1607096563.2917404,
+      "value": "2020-12-13",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2917404,
+      "modDate": 1607096563.2917404,
+      "value": "2020-12-18",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2917404,
+      "modDate": 1607096563.2917404,
+      "value": "5fae6767d66b1e67456b0378",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2917404,
+      "modDate": 1607096563.2917404,
+      "value": "Film Noir",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2917404,
+  "modDate": 1607096563.2917404,
+  "lastCorrelator": "594084b8-3647-11eb-bd12-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0360",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.2965965,
+      "modDate": 1607096563.2965965,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.2965965,
+      "modDate": 1607096563.2965965,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.2965965,
+      "modDate": 1607096563.2965965,
+      "value": "Spirited Away",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.2965965,
+      "modDate": 1607096563.2965965,
+      "value": "2020-12-12",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.2965965,
+      "modDate": 1607096563.2965965,
+      "value": "2020-12-16",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.2965965,
+      "modDate": 1607096563.2965965,
+      "value": "5fae6767d66b1e67456b0379",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.2965965,
+      "modDate": 1607096563.2965965,
+      "value": "Animated",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.2965965,
+  "modDate": 1607096563.2965965,
+  "lastCorrelator": "594132e6-3647-11eb-a147-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0361",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.3012452,
+      "modDate": 1607096563.3012452,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.3012452,
+      "modDate": 1607096563.3012452,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.3012452,
+      "modDate": 1607096563.3012452,
+      "value": "The Shining",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.3012452,
+      "modDate": 1607096563.3012452,
+      "value": "2020-12-19",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.3012452,
+      "modDate": 1607096563.3012452,
+      "value": "2020-12-25",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.3012452,
+      "modDate": 1607096563.3012452,
+      "value": "5fae6767d66b1e67456b0375",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.3012452,
+      "modDate": 1607096563.3012452,
+      "value": "Horror",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.3012452,
+  "modDate": 1607096563.3012452,
+  "lastCorrelator": "5941f550-3647-11eb-b2a9-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0362",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.3060439,
+      "modDate": 1607096563.3060439,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.3060439,
+      "modDate": 1607096563.3060439,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.3060439,
+      "modDate": 1607096563.3060439,
+      "value": "Lincoln",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.3060439,
+      "modDate": 1607096563.3060439,
+      "value": "2020-12-21",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.3060439,
+      "modDate": 1607096563.3060439,
+      "value": "2020-12-24",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.3060439,
+      "modDate": 1607096563.3060439,
+      "value": "5fae6767d66b1e67456b0376",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.3060439,
+      "modDate": 1607096563.3060439,
+      "value": "Biopic",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.3060439,
+  "modDate": 1607096563.3060439,
+  "lastCorrelator": "5942aa90-3647-11eb-bd23-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0363",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.3104646,
+      "modDate": 1607096563.3104646,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.3104646,
+      "modDate": 1607096563.3104646,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.3104646,
+      "modDate": 1607096563.3104646,
+      "value": "The Sound of Music",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.3104646,
+      "modDate": 1607096563.3104646,
+      "value": "2020-12-21",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.3104646,
+      "modDate": 1607096563.3104646,
+      "value": "2020-12-25",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.3104646,
+      "modDate": 1607096563.3104646,
+      "value": "5fae6767d66b1e67456b0377",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.3104646,
+      "modDate": 1607096563.3104646,
+      "value": "Musical-Dance",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.3104646,
+  "modDate": 1607096563.3104646,
+  "lastCorrelator": "59435fb2-3647-11eb-8cec-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0364",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.3153648,
+      "modDate": 1607096563.3153648,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.3153648,
+      "modDate": 1607096563.3153648,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.3153648,
+      "modDate": 1607096563.3153648,
+      "value": "Airplane!",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.3153648,
+      "modDate": 1607096563.3153648,
+      "value": "2020-12-20",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.3153648,
+      "modDate": 1607096563.3153648,
+      "value": "2020-12-24",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.3153648,
+      "modDate": 1607096563.3153648,
+      "value": "5fae6767d66b1e67456b0378",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.3153648,
+      "modDate": 1607096563.3153648,
+      "value": "Comedy",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.3153648,
+  "modDate": 1607096563.3153648,
+  "lastCorrelator": "5944107e-3647-11eb-b835-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fae5a9dd66b1e67456b0365",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.3202915,
+      "modDate": 1607096563.3202915,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.3202915,
+      "modDate": 1607096563.3202915,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.3202915,
+      "modDate": 1607096563.3202915,
+      "value": "When Harry Met Sally...",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.3202915,
+      "modDate": 1607096563.3202915,
+      "value": "2020-12-20",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.3202915,
+      "modDate": 1607096563.3202915,
+      "value": "2020-12-22",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.3202915,
+      "modDate": 1607096563.3202915,
+      "value": "5fae6767d66b1e67456b0379",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.3202915,
+      "modDate": 1607096563.3202915,
+      "value": "Romance\r\n",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.3202915,
+  "modDate": 1607096563.3202915,
+  "lastCorrelator": "5944d63a-3647-11eb-a63f-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fc3f7768e4a091e9e731213",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.3253403,
+      "modDate": 1607096563.3253403,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.3253403,
+      "modDate": 1607096563.3253403,
+      "value": true,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.3253403,
+      "modDate": 1607096563.3253403,
+      "value": "Supernatural v5",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.3253403,
+      "modDate": 1607096563.3253403,
+      "value": "2020-12-04",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.3253403,
+      "modDate": 1607096563.3253403,
+      "value": "2020-12-20",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.3253403,
+      "modDate": 1607096563.3253403,
+      "value": "5fae6767d66b1e67456b0368",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.3253403,
+      "modDate": 1607096563.3253403,
+      "value": "Action",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.3253403,
+  "modDate": 1607096563.3253403,
+  "lastCorrelator": "59459a48-3647-11eb-813a-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fc8f2e0e1b8263b415803ce",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.3299236,
+      "modDate": 1607096563.3299236,
+      "value": false,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.3299236,
+      "modDate": 1607096563.3299236,
+      "value": true,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.3299236,
+      "modDate": 1607096563.3299236,
+      "value": "Fast And Furious",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.3299236,
+      "modDate": 1607096563.3299236,
+      "value": "2020-12-02",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.3299236,
+      "modDate": 1607096563.3299236,
+      "value": "2020-12-20",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.3299236,
+      "modDate": 1607096563.3299236,
+      "value": "5fae6767d66b1e67456b0368",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.3299236,
+      "modDate": 1607096563.3299236,
+      "value": "Action",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.3299236,
+  "modDate": 1607096563.3299236,
+  "lastCorrelator": "59465154-3647-11eb-975a-0242ac12010b"
+},{
+  "_id": {
+    "id": "5fc8f5b28d94057766326dba",
+    "type": "Movie",
+    "servicePath": "/"
+  },
+  "attrNames": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "cinema_id",
+    "category"
+  ],
+  "attrs": {
+    "isComingSoon": {
+      "type": "Boolean",
+      "creDate": 1607096563.334223,
+      "modDate": 1607096563.334223,
+      "value": true,
+      "mdNames": []
+    },
+    "isPlaying": {
+      "type": "Boolean",
+      "creDate": 1607096563.334223,
+      "modDate": 1607096563.334223,
+      "value": false,
+      "mdNames": []
+    },
+    "title": {
+      "type": "Text",
+      "creDate": 1607096563.334223,
+      "modDate": 1607096563.334223,
+      "value": "Fast And Furious 2",
+      "mdNames": []
+    },
+    "start_date": {
+      "type": "Text",
+      "creDate": 1607096563.334223,
+      "modDate": 1607096563.334223,
+      "value": "2020-12-13",
+      "mdNames": []
+    },
+    "end_date": {
+      "type": "Text",
+      "creDate": 1607096563.334223,
+      "modDate": 1607096563.334223,
+      "value": "2020-11-30",
+      "mdNames": []
+    },
+    "cinema_id": {
+      "type": "Text",
+      "creDate": 1607096563.334223,
+      "modDate": 1607096563.334223,
+      "value": "5fae6767d66b1e67456b036a",
+      "mdNames": []
+    },
+    "category": {
+      "type": "Text",
+      "creDate": 1607096563.334223,
+      "modDate": 1607096563.334223,
+      "value": "Action",
+      "mdNames": []
+    }
+  },
+  "creDate": 1607096563.334223,
+  "modDate": 1607096563.334223,
+  "lastCorrelator": "5946fcda-3647-11eb-95af-0242ac12010b"
+}]

@@ -1,0 +1,1308 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: mysql_keyrock_db
+-- Generation Time: Dec 04, 2020 at 01:02 PM
+-- Server version: 5.7.32
+-- PHP Version: 7.4.11
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `idm`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `authzforce`
+--
+
+CREATE TABLE `authzforce` (
+  `az_domain` varchar(255) NOT NULL,
+  `policy` char(36) CHARACTER SET latin1 COLLATE latin1_bin DEFAULT NULL,
+  `version` int(11) DEFAULT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `auth_token`
+--
+
+CREATE TABLE `auth_token` (
+  `access_token` varchar(255) NOT NULL,
+  `expires` datetime DEFAULT NULL,
+  `valid` tinyint(1) DEFAULT NULL,
+  `user_id` varchar(36) DEFAULT NULL,
+  `pep_proxy_id` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `auth_token`
+--
+
+INSERT INTO `auth_token` (`access_token`, `expires`, `valid`, `user_id`, `pep_proxy_id`) VALUES
+('017c90e5-7e82-477a-80c7-211dd6330f47', '2020-12-04 13:51:38', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('09d2b0f9-b36b-4f4e-8f33-18cd22e688d6', '2020-12-04 11:46:03', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('449f137b-659f-4e02-afaa-81dd68c94630', '2020-12-04 11:46:03', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('4908151a-512e-4c16-a66a-c4a4da901987', '2020-12-04 12:01:59', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('52529100-5883-4d71-a61b-50afcf2d5e76', '2020-11-14 12:05:38', 1, 'admin', NULL),
+('6d9b1a7b-1c4c-4f6a-8f21-fd94d321184d', '2020-12-04 11:42:05', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('8f0fd879-5a76-44d0-9a07-dda31896f551', '2020-12-04 11:39:24', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('929c955e-56ac-4eb2-b2d0-862d33a4bbe4', '2020-12-04 13:47:06', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('9bf98a48-ed06-4f71-9f37-123a8934a904', '2020-12-04 13:47:06', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('9dd25993-dfd2-4062-bddb-fe42399ff3d3', '2020-12-04 12:01:59', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('a08361b1-7da4-45e0-8d59-79bb1840055c', '2020-12-04 13:36:12', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('a3585cbc-de11-4638-a914-4b5ccd85847a', '2020-12-04 13:51:38', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('a796d7ba-abed-42e1-a4f8-95c15668992d', '2020-11-14 12:17:50', 1, 'admin', NULL),
+('b397af49-03c7-4542-bb9a-cf01b83709b8', '2020-11-14 12:05:59', 1, 'admin', NULL),
+('bdad06ff-e194-4aa4-bd6b-34a0dc53f389', '2020-12-04 11:42:05', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('bec72f37-a860-44d9-b0fb-e35bcf7088ca', '2020-12-04 13:51:59', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('f4906731-70cb-4523-be98-0bba14754706', '2020-12-04 11:39:24', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('f52d6b6f-a525-4fd1-972d-817885266685', '2020-12-04 13:36:12', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69'),
+('fa16652e-7d11-4bcb-b4f2-565a059f0bc2', '2020-12-04 13:51:59', 1, NULL, 'pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `eidas_credentials`
+--
+
+CREATE TABLE `eidas_credentials` (
+  `id` varchar(36) NOT NULL,
+  `support_contact_person_name` varchar(255) DEFAULT NULL,
+  `support_contact_person_surname` varchar(255) DEFAULT NULL,
+  `support_contact_person_email` varchar(255) DEFAULT NULL,
+  `support_contact_person_telephone_number` varchar(255) DEFAULT NULL,
+  `support_contact_person_company` varchar(255) DEFAULT NULL,
+  `technical_contact_person_name` varchar(255) DEFAULT NULL,
+  `technical_contact_person_surname` varchar(255) DEFAULT NULL,
+  `technical_contact_person_email` varchar(255) DEFAULT NULL,
+  `technical_contact_person_telephone_number` varchar(255) DEFAULT NULL,
+  `technical_contact_person_company` varchar(255) DEFAULT NULL,
+  `organization_name` varchar(255) DEFAULT NULL,
+  `organization_url` varchar(255) DEFAULT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL,
+  `organization_nif` varchar(255) DEFAULT NULL,
+  `sp_type` varchar(255) DEFAULT 'private',
+  `attributes_list` json DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `iot`
+--
+
+CREATE TABLE `iot` (
+  `id` varchar(255) NOT NULL,
+  `password` varchar(40) DEFAULT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL,
+  `salt` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_access_token`
+--
+
+CREATE TABLE `oauth_access_token` (
+  `access_token` varchar(255) NOT NULL,
+  `expires` datetime DEFAULT NULL,
+  `scope` varchar(2000) DEFAULT NULL,
+  `refresh_token` varchar(255) DEFAULT NULL,
+  `valid` tinyint(1) DEFAULT NULL,
+  `extra` json DEFAULT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL,
+  `user_id` varchar(36) DEFAULT NULL,
+  `iot_id` varchar(255) DEFAULT NULL,
+  `authorization_code` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `oauth_access_token`
+--
+
+INSERT INTO `oauth_access_token` (`access_token`, `expires`, `scope`, `refresh_token`, `valid`, `extra`, `oauth_client_id`, `user_id`, `iot_id`, `authorization_code`) VALUES
+('000023cbcc0ad39490d044a426cf20df07a6a44b', '2020-11-27 12:46:55', 'bearer', '09af9ecf160b1427767c56aa170c50c8e23341aa', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('01a1497591748549b83aa266a5d9ac7461d9f4b9', '2020-11-18 11:38:44', 'bearer', '8574230c6a6f38a225f4236db7052b5c8e76225e', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('01a4da82f0ce7a257c0845e8151b1c8d151376b7', '2020-11-12 21:50:31', 'bearer', '615184e37aa9194d0089ab8c9ef1b8051577582e', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('03d68d1c3c2182eeb359f575a37a21378c417fa3', '2020-11-12 12:33:21', 'bearer', '573ebb45c0d831e8c0d3f59b3fd0d579c03dc80f', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('03db9184c12fac8e8cf5b0bcdbfd473cb2fc0850', '2020-11-29 16:27:09', 'bearer', '5344e1c32489500bd13afffc24b59807d8673e5d', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('06e08acc61be72e8c3facf44da6a9f2a879dba96', '2020-12-04 10:36:32', 'bearer', '981827a1cca9c91602aa200bf67a76579d9b4fc5', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('076115a828484c25652a34cbc9ad9b0604960a22', '2020-11-12 11:09:25', 'bearer', 'a056b3acca6c6091e83f22a8659e64316619ef2d', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('081e6dd6783f5dc445c8fe0c7a42a185b55c0416', '2020-12-01 16:53:08', 'bearer', '0ae778eba6d32d8b0b419ae5c8c928a3b2745162', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('093b2179d42a296c975ce93df029d9746dcf2090', '2020-12-04 10:55:18', 'bearer', '6943021a8bcdc1f8e21dc140805aa04e241dedc2', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('0d34e66f5ade6cec096330ead5dc6a8ba993ac77', '2020-12-04 10:39:33', 'bearer', '5cd1bf7f3dbbc4ac011f955cce234439bf8b8bd3', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('0e8d095db3be0e4814ecd19fc702d33eae857ce9', '2020-11-18 12:34:59', 'bearer', '100476c63e0a9c0bdd0d6084e41ddfbbfc15c4c7', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('0fc97d5a43dc4c931f35dd0810d735c027676ac6', '2020-11-30 09:07:04', 'bearer', 'afc2691346611c53a44db11dc623459400b2b220', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('1134a8fd42b65ebe69b3da93dbfb310817a8e03d', '2020-11-14 12:13:48', 'bearer', 'ab0b04b9757396b549d43faf8aacd5ac6458d8b6', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('16727605c0d410d59bd5e86f3e2c8fd3220dbe9e', '2020-11-12 10:54:34', 'bearer', 'f23951ad21825f2a92ff63dc7432e9043c410c7e', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('177d471c55711e8ad1345f7511544f4e71fef475', '2020-12-03 10:09:43', 'bearer', '087b6af4453b0e4cb22cf6cc315c5ebede6a4e5b', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('18e2086a0bff78aa54ca07f6fd37f5b8d54b380c', '2020-12-04 09:38:43', 'bearer', 'f312d46f78d5fc7fa6315f10cb173b5a18c1eb74', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('196726de6e9bf2c1e6c4aad2fa8bbee24abb4a5f', '2020-11-27 12:54:45', 'bearer', '43c01505e1a16ba49cd26e170234319f2ca90708', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('1aea1576cf14b4d19c1abeec54f5a98fc67d9085', '2020-12-01 16:55:20', 'bearer', 'e8ec65bca118979016cf6fdf63a9cb983c4964b9', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('1da95baeca675e5661f0010768f921b51d3bf8de', '2020-11-12 11:06:10', 'bearer', '6f161937a31c102860e76038ccb8be8a8573806b', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('1f0bcf359035c6aeaa4c6af516466511bf6ad085', '2020-11-12 10:57:00', 'bearer', 'b61488c6fc74326b827ba32692ae18b1105a4e18', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('217eba1daf6bad7b36aa20f1b57dae0c70fb6e3a', '2020-11-27 12:47:18', 'bearer', '075ffb997cb1c019d0475f3e96188c5c43158f40', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('21a0a30bcfe10ea17438e653213cb96cb9cf787e', '2020-11-12 11:21:38', 'bearer', '134e84655db1f03e2b9e9e7119e124eac3fbdf13', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('229b0b4a2bde2043b524c3bd640e2ffd53c2d982', '2020-12-03 18:02:21', 'bearer', 'c986d65906352f5506eb9146f05056928d1c02dc', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '2483edd9-4ee0-43cd-92d8-bcde393df687', NULL, NULL),
+('23bd9b746ba6085f153785951724d3186b4f061a', '2020-11-12 12:30:24', 'bearer', '1f12d25fe24e3eede04cbdf29bd5fdc7bd2182c9', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('2570745685fad510332101ae704ec03f97772bf0', '2020-12-04 09:07:39', 'bearer', 'be4725aa2125f18b6ba6bb4d3c64426c995a6be9', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('25efdf5421af451d205ce81256a922d90880f4b1', '2020-11-28 16:46:41', 'bearer', '3a430c2157745009cc4e9bfc30885e9dc1b6be88', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('2736d798c77cd49d0b04fa27cdbe1ed229ff2466', '2020-11-20 08:55:41', 'bearer', '0546acad5e90b40e5b415bdd8dee0ed2763d2a2f', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('27a4be793004afcdf02e646f255b69cf74bd77d8', '2020-12-04 08:59:24', 'bearer', 'e2a12ee5d804de5468b1e5d615f9b8fff0efaf79', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('2ab2946f45930b946dda9b593d7644f3eba20f11', '2020-11-28 13:45:20', 'bearer', '75d51521d8f6cdc52c32b19cbd5046d6d68b02a9', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('2cd7764f8215d2f4ec5d3f77d3c870d6612b51da', '2020-11-29 14:18:20', 'bearer', 'bf0214627886619dc65aec5de702fbc4943233c9', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('2e10b935118a086a5ff9fb1b8706a78d712378cf', '2020-12-03 18:00:40', 'bearer', 'dd05b83e891aa6a6f3c471e4de4f5af22726a7e1', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL),
+('2f88a58b3c0b67b0a191ddfc9dd360eb734cb6ef', '2020-11-12 11:08:43', 'bearer', '0ee1c62df31b81b8c452f7f0f1c65a84a36ba807', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('2fb933a0c8519dbee3cba0f0022faa84833bc98c', '2020-12-02 21:54:51', 'bearer', '1ad960452e5a5c4f9eb274720579366c0827f3db', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL),
+('30189afce150323f2a348b7dec26129c43809037', '2020-11-18 12:03:45', 'bearer', '41c3c926ea81f59d841e6abf0ffa04ce715a9215', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('3074e8c7006a1cde42163ecfb765153fe46107a9', '2020-11-18 18:58:37', 'bearer', 'bd370fdad8b50fc8d679e6aa4a15feca55bba8e4', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('3199d9c85121b6c4498ca77284815e3e1bb653bc', '2020-12-04 11:46:00', 'bearer', 'dbdd045ef326871db54ecf8f3c1be74379b8ffb2', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('327d1cc975fde69a4177700a6224a1bbe3f83739', '2020-11-29 14:25:29', 'bearer', '9c7429a299a90528644ff01a1e2f10d6ddabe79e', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('34b661c414a2fabf8e0f34f2ed6f5d03b40843af', '2020-11-19 13:13:06', 'bearer', '80c4be5f88077cfde19d17cf95158ae033f46c51', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('357145c7c8c7e43c390cd153219a1bf75503feb0', '2020-11-12 11:01:11', 'bearer', 'a29cfc3a7b55bbfbb54140c6ae7aa4cda56e0016', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('39141ad69d483c147851a87cbe0c9e36c3bc3a7c', '2020-12-02 21:16:07', 'bearer', 'c9ed640a67bd69aa7dd178dd27eca52d35dd2cfe', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL),
+('399b75bbf1b225db8f6c6409ff951b1f729fe2cc', '2020-12-04 11:11:08', 'bearer', 'eaf6f77f33bef6b70e06355686196392c87db4b9', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('39ac20cb1cb89df84292ab193be4950006858d4b', '2020-12-02 19:01:25', 'bearer', 'aef1fc95315457ff8106952567aba798ac9763de', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('3ca00a843464e824e6239307c3aa75c8eae210d3', '2020-12-02 21:18:40', 'bearer', 'b07993c3ea2e8031c5216b9db9aaac6363a041a6', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL),
+('3dd4d35002b77dd1b68f226fab9fca7e063d441a', '2020-11-18 18:43:43', 'bearer', 'c6f0df7f6b460827595eaeec27460dfc1933094e', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('404aa330635a5a92971875e0fffde9b550837efb', '2020-11-29 10:52:30', 'bearer', '13d81ebd7f75976d8af1c293cae94918a35d2eac', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('4052a93ec2ebb3a2641f4efe8719f41f56ffa7f5', '2020-12-04 10:35:24', 'bearer', 'b581f44eb26cae476ddc113421828082a0fa50fe', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('418fdda26887f9e8f70cf7497af6e618e2fd5900', '2020-12-02 21:23:14', 'bearer', '0800004abba819547313cd91a8e515b5d1ea0aba', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('419d52db2703ce45525cb20a39cb700da1a63bb1', '2020-12-01 16:54:10', 'bearer', '806704dca5d56f521a92346e636b0e36d7bfabe3', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('429faa46f9e0bede64a6537c9ac6b7879f1fd35a', '2020-11-13 12:42:07', 'bearer', '7c545e878ea8de1342ad0da310a7130f959068a3', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('4615d964635978137d23304e10b79521adabbed7', '2020-11-13 12:43:41', 'bearer', 'c88c07da29a89da3424308872a8ed0bc712f3e41', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('464e0db6bc79ec7ef4c3af612b27d5f70f0e9277', '2020-12-02 21:19:47', 'bearer', '74a04d41bba82bffb92d521d03c7b7c100733464', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('47ac8374f5c0f8a3b2f7aa9741ea9d65656c6eb9', '2020-11-29 12:56:21', 'bearer', '702c2f4c2c7b7dd52bb515c325c69b12bbe9cde5', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('48278dc145e077c159c90c6bdac5563421f31bc7', '2020-12-03 18:08:06', 'bearer', '1f0d8eb1ad191f967fb9d9b02e09beb48e83f909', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('488ce023c2c45104c9f71275ea0462a5f5fa2df0', '2020-11-12 11:09:06', 'bearer', '35de0efa8cbf86080ff3aa74f2cd2b8143b0757c', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('4f6829ccc2dbaad4aea25da4154a889a4742759b', '2020-11-19 11:52:56', 'bearer', '926e4970a2ea5d787a6ba69a8af6810cbc1ac12e', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('508aa5553b5ca2aedad71e5cb5a4025d65ebda6e', '2020-11-27 23:47:37', 'bearer', '0eb913928c08cf42ce370b83e5628d6ae7c3a63f', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('512a988ca554ab3f626b22629ba1fad571acc719', '2020-12-02 20:42:05', 'bearer', 'be8020ef0318eccc553dd6de68797b0fae18c9f0', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('52c12923a5d6787ff60fb34131e24ac675479b84', '2020-12-02 14:13:24', 'bearer', '01015d3768053d4b18ff781c435128c33231790a', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('5539f79c7b5ebdf327fd47141019b0af7f2e68e0', '2020-11-29 14:03:57', 'bearer', '935b3d437320aea79632bd854de571236dc4aad8', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('58ef3d055b21fd391167d6326aed256056494967', '2020-12-02 12:09:34', 'bearer', '8128840b5ba250f8fc275beda92c71c41e70e8ef', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('5a83a4bcb6b8377fb645ec33bc0ee136f374901d', '2020-12-02 21:07:43', 'bearer', '4887a74ae683dd5488a6a65ac1180198d1aff67b', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL),
+('5ac3986201ffc5e6f4187a51f243a1b360e914f7', '2020-12-02 11:51:03', 'bearer', 'e2ef18d4ad7e679dd9261e632269967e0863367e', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('5e037ac60c0f2ef0161da34c6601360587e1095b', '2020-12-01 12:00:10', 'bearer', '56fac1e67b0ae453dd6f43ea776812414e3f8283', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('60f06ccf4688d7c8c0803bdd6c7d39ca81f9d5d6', '2020-11-12 11:25:04', 'bearer', 'f64ce34990d36e78f9976f59769444046a011468', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('6478a2301a2915b804991b2b3eda50737e262756', '2020-11-19 13:13:15', 'bearer', '040c260c76b769c960c4591f88458a2e22510543', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('6608659b00475f3874a6aa1f7fe19aa1d708fcfb', '2020-11-13 12:45:23', 'bearer', '7621d16713ac9b7aeab228089fd295e5065c64b4', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('6673ee06af39efa03dc26b93bc8bda8986b14ae6', '2020-12-01 13:18:30', 'bearer', 'a364dd4e130841a32e79a12d251c131cc640101c', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('69a31e65a331f0390b360af133de9fce2974bf14', '2020-12-02 11:12:39', 'bearer', '3e097751d0a47595dbad51cf22ca98a88c6d53d5', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('6d6c6c9feb5abddda51134e9937053403b622f79', '2020-12-01 11:58:13', 'bearer', 'cf24a62f1fccacc1add0ff5e6cdc509a63825d2f', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('7308a19b1e3a298f4236d3cd4d52d5299935ba3f', '2020-11-19 11:53:46', 'bearer', '0443008531657b2d44b3bfc6711b82e69a060620', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('754abf0cb7d59e2dcde947c67e7e098d960cd907', '2020-12-03 17:35:56', 'bearer', '6798df06193cad5d618c0788443a5157f6ddf040', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '2483edd9-4ee0-43cd-92d8-bcde393df687', NULL, NULL),
+('7677bce069fa22566bbef4589b88567e5f1ca027', '2020-11-28 16:51:01', 'bearer', 'ae4f85d1a861830c0700c7c3a3091170cadfdee3', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('7842f919d82166a63a8f23c84287f2deee5faa84', '2020-11-27 12:51:03', 'bearer', '4cd8e43e90069421b667f1e37681b41b7c67faf8', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('7a43b9ef250ac63d328da434156dde854e5d7493', '2020-11-12 11:04:08', 'bearer', '341e5b19880ea05159b111032f295acc4e05806d', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('7bf91d5c70d199d3e17efff594dd56f98170df5b', '2020-11-29 12:35:54', 'bearer', 'fdf4be5c1c13fe618fe741ca94bb3cf67c6cec8a', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('7dd27a0c0197f05cc55af30f8888e5bb7baca374', '2020-12-03 17:25:18', 'bearer', 'd760373db78848126d41b6a54d35e2c52fae1b8b', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '2483edd9-4ee0-43cd-92d8-bcde393df687', NULL, NULL),
+('80e00f324f535f5ec96d5ffb52b2d06d57c0e057', '2020-11-29 14:25:14', 'bearer', '1a9e0f824e983e0d6d9c22f7d1626e96fe8e61a3', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('80f34e4db5767cdb2504b6bf3c75a8c311600351', '2020-11-12 10:54:51', 'bearer', '1d612ca133fcf34a93c81e75d5de38bed9052b65', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('8127640a5ec9957182c44f6dabc0dffab4882070', '2020-12-04 11:42:05', 'bearer', 'ba83626908d0f3af2242b5c54dfbb4bc56c00eea', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('818fa6aff688994e3ede95ec9c52c262cf21335a', '2020-11-12 10:56:01', 'bearer', 'a94eb21db9c195ab9aa8f290362db33d0d18a7d9', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('844a306dfb8c441150802dbee62b824283d4a83b', '2020-11-14 12:22:19', 'bearer', '1140e8a1c0a1c3e2a5032edc9c76ec7b68c7b72f', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('86b146241eb00191e2f1b37bae818484c0b4dd5b', '2020-12-02 12:25:21', 'bearer', '3d7bc55cb335501dd17991d861ce8462df56a317', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('878fab9bb1642a70d1e41ab0f88b77884dc26ae8', '2020-12-02 12:35:02', 'bearer', '6c8d03bfb7d66dee6ee21c27169bf1b0b6532931', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('884bfe18ccf50ef5950de6489b16bd2516b43637', '2020-11-12 22:01:55', 'bearer', 'a9bfe5616bdf30a525be1606c0099da1242e47ee', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('8b02b6526a1701c437b2193bf9582e74ff8d75b2', '2020-11-27 12:51:57', 'bearer', '93c822bed6dca19c21c64264e9f36528d5f64c59', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL),
+('8c408ba1ed5efd8cbaaae5bbc30793ca613692c4', '2020-11-13 12:44:23', 'bearer', 'c16a2bf1c101863b334bb0e41d25d63bd71d5e48', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('8d24f03c4e767a61decf694b6e085e4415c75ea2', '2020-11-12 11:09:03', 'bearer', 'a6c1e8ceaa4a9795b79185c696558d2b788868c6', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('8da3171833c105ab2310e8fd2279634be2a2efd7', '2020-11-14 12:22:20', 'bearer', '56203a269b604bbf1d164043dd7030f4412c1251', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('90c69639e86e86a4a781c29e4c1a84a9db53fc13', '2020-11-13 12:47:05', 'bearer', '38e75257e4489f98f61c79872c95f6df190972ab', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('91b635c8e0d4a2fba6a5cb3332ad85707bb1cb54', '2020-12-03 17:18:17', 'bearer', '3b0f98fd57ffddf0d316c865b0b4463ab596d913', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL),
+('9270c2e6f9dbf7a1119121e64a06a07078037774', '2020-11-12 16:14:27', 'bearer', '49fd2408463a9d5fb3e10f7df878c5a0943dd9c3', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('93c66ada4dd4cc20fe61119c403f459f61c32dd7', '2020-12-02 21:50:46', 'bearer', 'e56b5ce9ac01304e40f1c3ff3ca0a22172375725', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL),
+('960d9f5bf8dcd7df99aa77afcbc2d9b28580a5e5', '2020-11-29 19:58:34', 'bearer', 'ce8196aad11356c1a32bcd090f468127d25ee6ba', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('96b8c7917c815aec974fbb4c55ef4f629086ec0d', '2020-11-12 10:55:29', 'bearer', 'f0402bd4f594b63bd2c2b9200790a1604656b9fd', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('97905ed430f9e544ffe384905dee8eac939b828c', '2020-11-12 10:53:03', 'bearer', '7eaeef17ea7aa2931646b36453f509e037bf06d9', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('97effcb43184606098176c5b8c7cdb734ebe5a21', '2020-12-02 20:41:53', 'bearer', '242ed1938516cd4a2b9e50a18f33097df7b04995', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('98aa46a12209e2c6e4982e020c056f3750d702b4', '2020-11-12 10:51:22', 'bearer', '70b9596e6f338187d755b417b64f479c160b354f', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('9a7ad5f7319c091a8390c06aa13a01942bfa9ac8', '2020-12-04 11:19:22', 'bearer', '1fa6ca03ba64b9ddef8486a343c8e4e92f68ec5d', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('9c866920e1f13227307813a3255838f4add7859e', '2020-12-02 17:57:10', 'bearer', 'fd66a748ccf3a5868939e2e38c6524ed597af706', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('9db71970743aa8effe4bc55b4310304da8d13825', '2020-12-04 13:36:25', 'bearer', '4defeaab1ce240a36b8f92e25b4d58b881506069', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('9e10c3cf278cd59e46bccb8a9b7f232e1a424cca', '2020-12-01 17:28:21', 'bearer', '771abbd7cdbe0bf9b5776bc422088beddf18226b', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('9eb8ed40fc461baa5952b0a78bda043e4dc4b88f', '2020-12-02 13:35:43', 'bearer', '8b6afb7063368a9aedac8cff8463c819fe45464c', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('9f970da58a846fdfdc62b38482ef14e9992ca30d', '2020-11-12 10:53:51', 'bearer', '164d825e4a52f27688d3316c829661ce008a9bfa', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('9fb15bccf6e9bd05f3a0fe81b0077568d859ae1f', '2020-11-18 16:12:52', 'bearer', '2205b97f33fd4d08ed78ee97843c4bc76951b19b', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('a0605a53a52c04b5f03d41108c9385adc85c8bf9', '2020-11-12 11:08:36', 'bearer', 'be498f491360f4c0238ac353c8bbfd280e61924f', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('a192eae6b86a639d47556118fbec4d242e56c890', '2020-11-12 10:43:30', 'bearer', '410991a9e41d4fc2b0f957345cab77eb66f50631', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('a1ec5c87baf6960a4325a0ab0b6f4ffca0cc1238', '2020-11-19 01:22:13', 'bearer', 'f7047e3431ab2d7a408ddfb1c94736be4d993092', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('a4742b955e1194fee3f4fca7f94ead61f8d3a2e5', '2020-11-12 12:15:39', 'bearer', '603125aadb00018531b3066c9f1b6c58a713cdd5', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('a56b2dd3ef308600f9bbe1503d8b0cab15bdf42b', '2020-11-19 13:11:57', 'bearer', '834194967394a818c1cb4d5807b6b01111f87d39', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('a5c4f4dd6b78ea5d1fb60becf9d09d0ab31a5b9a', '2020-11-13 12:47:31', 'bearer', 'ae6e4d9557efa15f11db0fbaedac9458e3ffada2', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('a6eec1a87a8fae0b10a9338a8694c36a81fbd536', '2020-11-27 12:47:39', 'bearer', '38a5370cacac4b5571307fb7f79674a934575af5', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('a8d590a29d44683760f44bbdef551a33229fc2a7', '2020-11-12 10:49:57', 'bearer', 'a1f1617c2436bb51f9370cc5af3c886ae8a297ee', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('a974aa59f480137e8e2ce2b9b7de1607b8cc86ea', '2020-12-01 12:41:57', 'bearer', '73ead16c8505cdeefde7f0434b8036d6a4ceb074', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('ac2573883ce209eec08f2fbdf5b92fb6c62eddea', '2020-12-02 22:14:09', 'bearer', '76d132bcf04b16c32a1f8ba7ce19237d72f6b486', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('acedf6af70764e487a0a098e48685580ef22e0d4', '2020-12-01 14:40:53', 'bearer', 'fb8c2634c3d6dc9712818dc2d32fe49820979781', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('ad21b7f6c8a3f6dda9a824c3edfaa68a339939cb', '2020-12-02 11:59:16', 'bearer', '7822644abf1de4a1618b459284c2310558f52208', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('ae16c0a4ec4f0532d8a8fb5e254e302880ae713a', '2020-11-28 16:52:51', 'bearer', '8fe24f0603812c81648dbefe59106abd0d0a2db4', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('b1a5bed7aaf2bb1a5dfb1b2bf658b8dd3764cacc', '2020-11-18 19:03:23', 'bearer', 'f1d39ac23d6e1c058640b7ec07df5e5043f75393', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('b1ecb60d10bf0b1bd6e8f25f113dd53f8471f781', '2020-11-12 11:04:50', 'bearer', '26600b3e1ba8790202237a076b8628a791c0768b', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('b3dc8e561c33de637713a202115a2ecdbb1777c2', '2020-11-18 18:52:48', 'bearer', '48182cd0928a5cdad85296f2022567fe954f0bd9', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('b4a44c267768c2607aba0896344e18db480d14bb', '2020-12-02 13:41:41', 'bearer', '4474bc7914d5bf8ac8c616a2a913fa850d77fd9d', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('b6d021fe1f4219d506a5f58a8cb211d5e5cad159', '2020-11-12 22:01:47', 'bearer', 'b117eb2bc230cbbd3f1a2a9ba8d7afb24d875c90', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('b9829931646b71d64a86d19bcba27ebd703405af', '2020-12-03 18:05:21', 'bearer', 'fcf233749ce1c5c56d5caf78d370a3222f5dad18', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL),
+('ba1e52f3ed8b551aa28dc1afe2227f492491826e', '2020-12-02 21:14:42', 'bearer', 'f9fd4d32fed01beaeabfd7cad2e5e164f4f66dc2', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'a56634a0-d5cb-43d9-bb60-45309aa218f7', NULL, NULL),
+('bb80932ddab33c6ddf02cfc52f6990ba383e933b', '2020-11-19 21:06:03', 'bearer', '8e67a6957f34f39238c45e17458c79fcb455b437', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('bc4995f6f6f5f10979a37351e354b2a60fcc58be', '2020-11-29 10:48:32', 'bearer', '4a1f5993fde0a31f07167ab85e0bc4ace6e438a5', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('c118a36de1fa6aa6745d218f8bbf6e8c0720eca3', '2020-12-02 21:17:16', 'bearer', 'a37b7c2ed13f1e307fdfd6064074d0d3d7f16c4d', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('c174e9020bfc1d2752dddf6109e3c6ce3801a11b', '2020-11-29 11:57:20', 'bearer', 'ec1a191f28cbcecb68417609e226bb624b5cda98', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('c26af2606e75f6475cd74366164159e71b6ed387', '2020-11-12 12:55:49', 'bearer', 'b99324d068aed865533e6a019fc6753cb0c575df', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('c45405ff22a2b74a7736fc6e543bf7570982fc29', '2020-11-12 10:53:08', 'bearer', 'c4df9e1723a713565e7865a0d37c092fec992a07', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('c5dd376a852a31806200e109fcfd296f2ec11018', '2020-11-12 10:52:22', 'bearer', '43e8e54de5d36ed7e736716817016552a9f3e137', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('c86b0e63ec181bc427662ae906f9d74174ae8527', '2020-11-12 11:04:21', 'bearer', '21178803f0b54c8f9a7fbc999c4ca94184b59dce', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('cc5176a2661150e875dc096a4b26a4952561619c', '2020-11-28 13:47:31', 'bearer', 'd94163f85248d5b61a05ebfcf03d33ced8627cf1', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('cd32cf1432cccaefdbcf502d7bca76d0949e1501', '2020-11-12 10:52:35', 'bearer', '3305bc54b9716632f47c2efa8657d06a5ad7c13e', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('cef0061295b5ed379e58d95cccbb2fc807130c7e', '2020-12-02 21:54:04', 'bearer', 'b973c794cd9e439290a1052e5f29302dd191d3bd', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('cf7dd8ed52b0f822f15ad10a0747ef82cdee0fb2', '2020-11-12 10:52:18', 'bearer', '11ca3b43e392ddcdcb669f631976ff96c53509c3', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('d1769d2fe74046c7f9c4ca7f0e64d1c62628daa2', '2020-11-12 10:58:11', 'bearer', 'eb47a2737d22288b62ee70e0fab3486494ea4544', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('d1da5bc1d066b677d9deead6ba5af817452125a0', '2020-11-19 12:04:19', 'bearer', '880c0aeb32c3f6941d11e61e6c8bac766cd8b558', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('d2ffa9367a7323503d152f0f715c32cf58d9b847', '2020-12-03 17:23:56', 'bearer', '481a5db87851b2443864a65bfddd0923e05efe43', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL),
+('d55b1ccd18c122b4dd52b39774413d4103bc3ecf', '2020-12-02 20:48:54', 'bearer', '0f04896162a9cb9e5a67e969886c6f79ef735a64', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('d58d34df4a641141fa73d20f373a0e7ead025579', '2020-12-02 10:01:54', 'bearer', 'dd41f536b8e6b17c51fabb63a7d2135b62064792', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('d805c55a1b77e27571c15df4062f60b09c1354c3', '2020-12-02 21:13:34', 'bearer', '1f5d97c94fa177ba761153a12f560b0ebfff1bc6', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '2483edd9-4ee0-43cd-92d8-bcde393df687', NULL, NULL),
+('dab5031aa14b47e90b87649b31abfdccaf3c9bab', '2020-11-12 12:30:06', 'bearer', '59d363f984b5950048e3b80faa013e5b4a305243', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('db3412410745a6e4456bfd7e6ab9c48427dabb81', '2020-12-03 18:06:42', 'bearer', '8a6335c832facca42df1dfe78d513bdf51429e07', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('dc4ab2bee8a3720863e51de73df22447bde23da7', '2020-12-03 17:35:03', 'bearer', 'ca0f5d6ace0a651255b1969e9f24d0ea9663947f', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL),
+('dcd3695a03a4bdbeea48dceb776380d1f5e9866a', '2020-11-12 10:43:23', 'bearer', 'aef340d4ea367b440d3ed743cd3011c76cb55701', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('de7215b1f3cc91e1d24599bc74677b29544cf365', '2020-12-02 18:17:50', 'bearer', 'bc2ac29fc72e658cf7603f571bf119fbc9d00897', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('e3551adaf275e08048da65eb19b893cc3be1c7b1', '2020-11-28 15:13:28', 'bearer', 'ac1860bf031bc14316293124fe2899fc9dfe4b1e', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('e47f1858413f309cb0bf99e58cdfccd9c278eb6d', '2020-11-27 12:50:09', 'bearer', 'b7652e4acfb07c2d4f2e691b7351d070ccad481c', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('e66b4b425937f1cedd4c813d78986df52eecd849', '2020-11-20 00:51:42', 'bearer', 'a0c427a2134dc5a87babbe89e984f30d82c2e2d9', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('e8809c962a349f902f0ec08cc0b2c3d23b3151e0', '2020-11-12 10:55:38', 'bearer', '0651e65f1d75ee4fd7ea82d29378890d7cb9a63e', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('eb911fe2fbe68e56945a42dd521195ec58d783c5', '2020-12-04 08:21:53', 'bearer', '11a0f101a6370cb0816dc25b044db1bc84fc4772', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('edcaf564579af2e9b448b2e480946d50e1df4c36', '2020-11-29 13:37:57', 'bearer', 'be24948bd03b98e04fb97f17d5c880fac8acf936', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('f0054da34d3b61f8b7420c752000282a27b49b34', '2020-11-12 10:56:17', 'bearer', 'f97b7ff7c0942418f598d63d2816078d89fc37a7', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('f0471c5d70f9eae6263eab304af68b683713cdfe', '2020-11-19 14:17:48', 'bearer', '86d5ea45d531370e36f1478d6e59e68daf077a51', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL),
+('f0b76c5e4214a3fe6f9d65c3f0a4329bdcadde51', '2020-11-12 10:58:56', 'bearer', 'ab260b8c2ad5011f5ade2ec120e419e6722b8e38', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('f15a69ed74c191a2bd57470fb6bdc4d311c9b961', '2020-12-04 11:40:18', 'bearer', '6b695e1bd9d28a0f1611d386b613f383003b7687', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL),
+('f20e9f675f4cebd73f5e716d15db1590b332e3cc', '2020-11-27 12:54:32', 'bearer', '08feb7d29b0738c9fb30852908eb8bb276900565', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL),
+('f3fc390e434cd567bcfa15f47d14e0892a2f950a', '2020-11-27 12:52:28', 'bearer', '301a3080c2851fd5d824931cc5ecaefc24e31c18', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('f5a0ea2382e6420b95030259c94574e3458d3d0e', '2020-12-03 18:03:58', 'bearer', '5378f2d2fa41680d0970b78561dcd0adffc0eed1', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'a56634a0-d5cb-43d9-bb60-45309aa218f7', NULL, NULL),
+('f8e57c7964ea16d5d10c1f958d829bcfad57a7d4', '2020-11-12 11:09:38', 'bearer', 'be9b459c0c9e4c0b63f36f618fd259a8df42483f', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL),
+('f9c1be0a6f7012a7775693fc0fbacb062ce32ff0', '2020-11-18 17:15:36', 'bearer', '6b59bc0340ef2577c13661120811f37654c46b4c', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('fb74f3211574deac0b1dd119c86f7be0e53d7770', '2020-11-12 10:54:06', 'bearer', 'd5a6ff2040e7a681400e1f8798157e8605f49f9c', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL),
+('fd428e38681b58bbe0e5e869ad8e4651afb48e53', '2020-11-27 12:51:19', 'bearer', '9fd042b75fc597ca152605e66c079c43e58544e3', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '2483edd9-4ee0-43cd-92d8-bcde393df687', NULL, NULL),
+('fe71d19c7f4f108a3dbf5bcaf0e2181eac9a8111', '2020-11-12 10:54:59', 'bearer', 'bcd97c41bc3c9029b15e63242508a36cb9751d18', 1, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_authorization_code`
+--
+
+CREATE TABLE `oauth_authorization_code` (
+  `authorization_code` varchar(256) NOT NULL,
+  `expires` datetime DEFAULT NULL,
+  `redirect_uri` varchar(2000) DEFAULT NULL,
+  `scope` varchar(2000) DEFAULT NULL,
+  `valid` tinyint(1) DEFAULT NULL,
+  `extra` json DEFAULT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL,
+  `user_id` varchar(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_client`
+--
+
+CREATE TABLE `oauth_client` (
+  `id` varchar(36) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `description` text,
+  `secret` char(36) CHARACTER SET latin1 COLLATE latin1_bin DEFAULT NULL,
+  `url` varchar(2000) DEFAULT NULL,
+  `redirect_uri` varchar(2000) DEFAULT NULL,
+  `image` varchar(255) DEFAULT 'default',
+  `grant_type` varchar(255) DEFAULT NULL,
+  `response_type` varchar(255) DEFAULT NULL,
+  `client_type` varchar(15) DEFAULT NULL,
+  `scope` varchar(2000) DEFAULT NULL,
+  `extra` json DEFAULT NULL,
+  `token_types` varchar(2000) DEFAULT NULL,
+  `jwt_secret` varchar(255) DEFAULT NULL,
+  `redirect_sign_out_uri` varchar(2000) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `oauth_client`
+--
+
+INSERT INTO `oauth_client` (`id`, `name`, `description`, `secret`, `url`, `redirect_uri`, `image`, `grant_type`, `response_type`, `client_type`, `scope`, `extra`, `token_types`, `jwt_secret`, `redirect_sign_out_uri`) VALUES
+('74812fd6-51be-43f0-96e3-65034ee2f190', 'Movies And Cinemas ', 'This is an app for users and cinema owners', '77af3ae8-0787-4814-96c5-4e81f5b0e709', 'http://172.18.1.8/app_logic_login.php', 'http://172.18.1.8/app_logic_login.php', 'default', 'authorization_code,implicit,password,client_credentials,refresh_token,hybrid', 'code,token', NULL, NULL, NULL, 'jwt,bearer', '7ec8101904672825', 'http://172.18.1.8/app_logic_login.php'),
+('idm_admin_app', 'idm', 'idm', NULL, '', '', 'default', '', '', NULL, NULL, NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_refresh_token`
+--
+
+CREATE TABLE `oauth_refresh_token` (
+  `refresh_token` varchar(256) NOT NULL,
+  `expires` datetime DEFAULT NULL,
+  `scope` varchar(2000) DEFAULT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL,
+  `user_id` varchar(36) DEFAULT NULL,
+  `iot_id` varchar(255) DEFAULT NULL,
+  `authorization_code` varchar(255) DEFAULT NULL,
+  `valid` tinyint(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `oauth_refresh_token`
+--
+
+INSERT INTO `oauth_refresh_token` (`refresh_token`, `expires`, `scope`, `oauth_client_id`, `user_id`, `iot_id`, `authorization_code`, `valid`) VALUES
+('01015d3768053d4b18ff781c435128c33231790a', '2020-12-16 13:13:24', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('040c260c76b769c960c4591f88458a2e22510543', '2020-12-03 12:13:15', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('0443008531657b2d44b3bfc6711b82e69a060620', '2020-12-03 10:53:46', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('0546acad5e90b40e5b415bdd8dee0ed2763d2a2f', '2020-12-04 07:55:41', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('0651e65f1d75ee4fd7ea82d29378890d7cb9a63e', '2020-11-26 09:55:38', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('075ffb997cb1c019d0475f3e96188c5c43158f40', '2020-12-11 11:47:18', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('0800004abba819547313cd91a8e515b5d1ea0aba', '2020-12-16 20:23:14', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('087b6af4453b0e4cb22cf6cc315c5ebede6a4e5b', '2020-12-17 09:09:43', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('08feb7d29b0738c9fb30852908eb8bb276900565', '2020-12-11 11:54:32', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL, 1),
+('09af9ecf160b1427767c56aa170c50c8e23341aa', '2020-12-11 11:46:55', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('0ae778eba6d32d8b0b419ae5c8c928a3b2745162', '2020-12-15 15:53:08', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('0eb913928c08cf42ce370b83e5628d6ae7c3a63f', '2020-12-11 22:47:37', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('0ee1c62df31b81b8c452f7f0f1c65a84a36ba807', '2020-11-26 10:08:43', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('0f04896162a9cb9e5a67e969886c6f79ef735a64', '2020-12-16 19:48:54', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('100476c63e0a9c0bdd0d6084e41ddfbbfc15c4c7', '2020-12-02 11:34:59', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('1140e8a1c0a1c3e2a5032edc9c76ec7b68c7b72f', '2020-11-28 11:22:19', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('11a0f101a6370cb0816dc25b044db1bc84fc4772', '2020-12-18 07:21:53', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('11ca3b43e392ddcdcb669f631976ff96c53509c3', '2020-11-26 09:52:18', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('134e84655db1f03e2b9e9e7119e124eac3fbdf13', '2020-11-26 10:21:38', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('13d81ebd7f75976d8af1c293cae94918a35d2eac', '2020-12-13 09:52:30', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('164d825e4a52f27688d3316c829661ce008a9bfa', '2020-11-26 09:53:51', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('1a9e0f824e983e0d6d9c22f7d1626e96fe8e61a3', '2020-12-13 13:25:14', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('1ad960452e5a5c4f9eb274720579366c0827f3db', '2020-12-16 20:54:51', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL, 1),
+('1d612ca133fcf34a93c81e75d5de38bed9052b65', '2020-11-26 09:54:51', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('1f0d8eb1ad191f967fb9d9b02e09beb48e83f909', '2020-12-17 17:08:06', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('1f12d25fe24e3eede04cbdf29bd5fdc7bd2182c9', '2020-11-26 11:30:24', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('1f5d97c94fa177ba761153a12f560b0ebfff1bc6', '2020-12-16 20:13:34', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '2483edd9-4ee0-43cd-92d8-bcde393df687', NULL, NULL, 1),
+('1fa6ca03ba64b9ddef8486a343c8e4e92f68ec5d', '2020-12-18 10:19:22', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('21178803f0b54c8f9a7fbc999c4ca94184b59dce', '2020-11-26 10:04:21', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('2205b97f33fd4d08ed78ee97843c4bc76951b19b', '2020-12-02 15:12:52', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('242ed1938516cd4a2b9e50a18f33097df7b04995', '2020-12-16 19:41:53', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('26600b3e1ba8790202237a076b8628a791c0768b', '2020-11-26 10:04:50', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('301a3080c2851fd5d824931cc5ecaefc24e31c18', '2020-12-11 11:52:28', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('3305bc54b9716632f47c2efa8657d06a5ad7c13e', '2020-11-26 09:52:35', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('341e5b19880ea05159b111032f295acc4e05806d', '2020-11-26 10:04:08', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('35de0efa8cbf86080ff3aa74f2cd2b8143b0757c', '2020-11-26 10:09:06', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('38a5370cacac4b5571307fb7f79674a934575af5', '2020-12-11 11:47:39', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('38e75257e4489f98f61c79872c95f6df190972ab', '2020-11-27 11:47:05', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('3a430c2157745009cc4e9bfc30885e9dc1b6be88', '2020-12-12 15:46:41', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('3b0f98fd57ffddf0d316c865b0b4463ab596d913', '2020-12-17 16:18:17', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL, 1),
+('3d7bc55cb335501dd17991d861ce8462df56a317', '2020-12-16 11:25:21', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('3e097751d0a47595dbad51cf22ca98a88c6d53d5', '2020-12-16 10:12:39', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('410991a9e41d4fc2b0f957345cab77eb66f50631', '2020-11-26 09:43:30', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('41c3c926ea81f59d841e6abf0ffa04ce715a9215', '2020-12-02 11:03:45', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('43c01505e1a16ba49cd26e170234319f2ca90708', '2020-12-11 11:54:45', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('43e8e54de5d36ed7e736716817016552a9f3e137', '2020-11-26 09:52:22', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('4474bc7914d5bf8ac8c616a2a913fa850d77fd9d', '2020-12-16 12:41:41', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('48182cd0928a5cdad85296f2022567fe954f0bd9', '2020-12-02 17:52:48', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('481a5db87851b2443864a65bfddd0923e05efe43', '2020-12-17 16:23:56', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL, 1),
+('4887a74ae683dd5488a6a65ac1180198d1aff67b', '2020-12-16 20:07:43', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL, 1),
+('49fd2408463a9d5fb3e10f7df878c5a0943dd9c3', '2020-11-26 15:14:27', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('4a1f5993fde0a31f07167ab85e0bc4ace6e438a5', '2020-12-13 09:48:32', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('4cd8e43e90069421b667f1e37681b41b7c67faf8', '2020-12-11 11:51:03', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('4defeaab1ce240a36b8f92e25b4d58b881506069', '2020-12-18 12:36:25', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('5344e1c32489500bd13afffc24b59807d8673e5d', '2020-12-13 15:27:09', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('5378f2d2fa41680d0970b78561dcd0adffc0eed1', '2020-12-17 17:03:58', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'a56634a0-d5cb-43d9-bb60-45309aa218f7', NULL, NULL, 1),
+('56203a269b604bbf1d164043dd7030f4412c1251', '2020-11-28 11:22:20', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('56fac1e67b0ae453dd6f43ea776812414e3f8283', '2020-12-15 11:00:10', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('573ebb45c0d831e8c0d3f59b3fd0d579c03dc80f', '2020-11-26 11:33:21', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('59d363f984b5950048e3b80faa013e5b4a305243', '2020-11-26 11:30:06', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('5cd1bf7f3dbbc4ac011f955cce234439bf8b8bd3', '2020-12-18 09:39:33', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('603125aadb00018531b3066c9f1b6c58a713cdd5', '2020-11-26 11:15:39', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('615184e37aa9194d0089ab8c9ef1b8051577582e', '2020-11-26 20:50:31', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('6798df06193cad5d618c0788443a5157f6ddf040', '2020-12-17 16:35:56', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '2483edd9-4ee0-43cd-92d8-bcde393df687', NULL, NULL, 1),
+('6943021a8bcdc1f8e21dc140805aa04e241dedc2', '2020-12-18 09:55:18', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('6b59bc0340ef2577c13661120811f37654c46b4c', '2020-12-02 16:15:36', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('6b695e1bd9d28a0f1611d386b613f383003b7687', '2020-12-18 10:40:18', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('6c8d03bfb7d66dee6ee21c27169bf1b0b6532931', '2020-12-16 11:35:02', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('6f161937a31c102860e76038ccb8be8a8573806b', '2020-11-26 10:06:10', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('702c2f4c2c7b7dd52bb515c325c69b12bbe9cde5', '2020-12-13 11:56:21', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('70b9596e6f338187d755b417b64f479c160b354f', '2020-11-26 09:51:22', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('73ead16c8505cdeefde7f0434b8036d6a4ceb074', '2020-12-15 11:41:57', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('74a04d41bba82bffb92d521d03c7b7c100733464', '2020-12-16 20:19:47', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('75d51521d8f6cdc52c32b19cbd5046d6d68b02a9', '2020-12-12 12:45:20', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('7621d16713ac9b7aeab228089fd295e5065c64b4', '2020-11-27 11:45:23', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('76d132bcf04b16c32a1f8ba7ce19237d72f6b486', '2020-12-16 21:14:09', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('771abbd7cdbe0bf9b5776bc422088beddf18226b', '2020-12-15 16:28:21', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('7822644abf1de4a1618b459284c2310558f52208', '2020-12-16 10:59:16', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('7c545e878ea8de1342ad0da310a7130f959068a3', '2020-11-27 11:42:07', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('7eaeef17ea7aa2931646b36453f509e037bf06d9', '2020-11-26 09:53:03', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('806704dca5d56f521a92346e636b0e36d7bfabe3', '2020-12-15 15:54:10', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('80c4be5f88077cfde19d17cf95158ae033f46c51', '2020-12-03 12:13:06', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('8128840b5ba250f8fc275beda92c71c41e70e8ef', '2020-12-16 11:09:34', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('834194967394a818c1cb4d5807b6b01111f87d39', '2020-12-03 12:11:57', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('8574230c6a6f38a225f4236db7052b5c8e76225e', '2020-12-02 10:38:44', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('86d5ea45d531370e36f1478d6e59e68daf077a51', '2020-12-03 13:17:48', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('880c0aeb32c3f6941d11e61e6c8bac766cd8b558', '2020-12-03 11:04:19', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('8a6335c832facca42df1dfe78d513bdf51429e07', '2020-12-17 17:06:42', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('8b6afb7063368a9aedac8cff8463c819fe45464c', '2020-12-16 12:35:43', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('8e67a6957f34f39238c45e17458c79fcb455b437', '2020-12-03 20:06:03', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('8fe24f0603812c81648dbefe59106abd0d0a2db4', '2020-12-12 15:52:51', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('926e4970a2ea5d787a6ba69a8af6810cbc1ac12e', '2020-12-03 10:52:56', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('935b3d437320aea79632bd854de571236dc4aad8', '2020-12-13 13:03:57', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('93c822bed6dca19c21c64264e9f36528d5f64c59', '2020-12-11 11:51:57', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL, 1),
+('981827a1cca9c91602aa200bf67a76579d9b4fc5', '2020-12-18 09:36:32', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('9c7429a299a90528644ff01a1e2f10d6ddabe79e', '2020-12-13 13:25:29', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('9fd042b75fc597ca152605e66c079c43e58544e3', '2020-12-11 11:51:19', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '2483edd9-4ee0-43cd-92d8-bcde393df687', NULL, NULL, 1),
+('a056b3acca6c6091e83f22a8659e64316619ef2d', '2020-11-26 10:09:25', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('a0c427a2134dc5a87babbe89e984f30d82c2e2d9', '2020-12-03 23:51:42', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('a1f1617c2436bb51f9370cc5af3c886ae8a297ee', '2020-11-26 09:49:57', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('a29cfc3a7b55bbfbb54140c6ae7aa4cda56e0016', '2020-11-26 10:01:11', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('a364dd4e130841a32e79a12d251c131cc640101c', '2020-12-15 12:18:30', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('a37b7c2ed13f1e307fdfd6064074d0d3d7f16c4d', '2020-12-16 20:17:16', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('a6c1e8ceaa4a9795b79185c696558d2b788868c6', '2020-11-26 10:09:03', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('a94eb21db9c195ab9aa8f290362db33d0d18a7d9', '2020-11-26 09:56:01', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('a9bfe5616bdf30a525be1606c0099da1242e47ee', '2020-11-26 21:01:55', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('ab0b04b9757396b549d43faf8aacd5ac6458d8b6', '2020-11-28 11:13:48', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('ab260b8c2ad5011f5ade2ec120e419e6722b8e38', '2020-11-26 09:58:56', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('ac1860bf031bc14316293124fe2899fc9dfe4b1e', '2020-12-12 14:13:28', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('ae4f85d1a861830c0700c7c3a3091170cadfdee3', '2020-12-12 15:51:01', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('ae6e4d9557efa15f11db0fbaedac9458e3ffada2', '2020-11-27 11:47:31', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('aef1fc95315457ff8106952567aba798ac9763de', '2020-12-16 18:01:25', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('aef340d4ea367b440d3ed743cd3011c76cb55701', '2020-11-26 09:43:23', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('afc2691346611c53a44db11dc623459400b2b220', '2020-12-14 08:07:04', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('b07993c3ea2e8031c5216b9db9aaac6363a041a6', '2020-12-16 20:18:40', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL, 1),
+('b117eb2bc230cbbd3f1a2a9ba8d7afb24d875c90', '2020-11-26 21:01:47', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('b581f44eb26cae476ddc113421828082a0fa50fe', '2020-12-18 09:35:24', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('b61488c6fc74326b827ba32692ae18b1105a4e18', '2020-11-26 09:57:00', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('b7652e4acfb07c2d4f2e691b7351d070ccad481c', '2020-12-11 11:50:09', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('b973c794cd9e439290a1052e5f29302dd191d3bd', '2020-12-16 20:54:04', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('b99324d068aed865533e6a019fc6753cb0c575df', '2020-11-26 11:55:49', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('ba83626908d0f3af2242b5c54dfbb4bc56c00eea', '2020-12-18 10:42:05', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('bc2ac29fc72e658cf7603f571bf119fbc9d00897', '2020-12-16 17:17:50', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('bcd97c41bc3c9029b15e63242508a36cb9751d18', '2020-11-26 09:54:59', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('bd370fdad8b50fc8d679e6aa4a15feca55bba8e4', '2020-12-02 17:58:37', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('be24948bd03b98e04fb97f17d5c880fac8acf936', '2020-12-13 12:37:57', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('be4725aa2125f18b6ba6bb4d3c64426c995a6be9', '2020-12-18 08:07:39', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('be498f491360f4c0238ac353c8bbfd280e61924f', '2020-11-26 10:08:36', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('be8020ef0318eccc553dd6de68797b0fae18c9f0', '2020-12-16 19:42:05', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('be9b459c0c9e4c0b63f36f618fd259a8df42483f', '2020-11-26 10:09:38', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('bf0214627886619dc65aec5de702fbc4943233c9', '2020-12-13 13:18:20', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('c16a2bf1c101863b334bb0e41d25d63bd71d5e48', '2020-11-27 11:44:23', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('c4df9e1723a713565e7865a0d37c092fec992a07', '2020-11-26 09:53:08', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('c6f0df7f6b460827595eaeec27460dfc1933094e', '2020-12-02 17:43:43', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('c88c07da29a89da3424308872a8ed0bc712f3e41', '2020-11-27 11:43:41', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'admin', NULL, NULL, 1),
+('c986d65906352f5506eb9146f05056928d1c02dc', '2020-12-17 17:02:21', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '2483edd9-4ee0-43cd-92d8-bcde393df687', NULL, NULL, 1),
+('c9ed640a67bd69aa7dd178dd27eca52d35dd2cfe', '2020-12-16 20:16:07', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL, 1),
+('ca0f5d6ace0a651255b1969e9f24d0ea9663947f', '2020-12-17 16:35:03', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL, 1),
+('ce8196aad11356c1a32bcd090f468127d25ee6ba', '2020-12-13 18:58:34', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('cf24a62f1fccacc1add0ff5e6cdc509a63825d2f', '2020-12-15 10:58:13', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('d5a6ff2040e7a681400e1f8798157e8605f49f9c', '2020-11-26 09:54:06', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('d760373db78848126d41b6a54d35e2c52fae1b8b', '2020-12-17 16:25:18', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '2483edd9-4ee0-43cd-92d8-bcde393df687', NULL, NULL, 1),
+('d94163f85248d5b61a05ebfcf03d33ced8627cf1', '2020-12-12 12:47:31', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('dbdd045ef326871db54ecf8f3c1be74379b8ffb2', '2020-12-18 10:46:00', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('dd05b83e891aa6a6f3c471e4de4f5af22726a7e1', '2020-12-17 17:00:40', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', NULL, NULL, 1),
+('dd41f536b8e6b17c51fabb63a7d2135b62064792', '2020-12-16 09:01:54', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('e2a12ee5d804de5468b1e5d615f9b8fff0efaf79', '2020-12-18 07:59:24', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('e2ef18d4ad7e679dd9261e632269967e0863367e', '2020-12-16 10:51:03', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('e56b5ce9ac01304e40f1c3ff3ca0a22172375725', '2020-12-16 20:50:46', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL, 1),
+('e8ec65bca118979016cf6fdf63a9cb983c4964b9', '2020-12-15 15:55:20', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '5e98ac10-8484-4c71-a961-58b42534c0bf', NULL, NULL, 1),
+('eaf6f77f33bef6b70e06355686196392c87db4b9', '2020-12-18 10:11:08', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('eb47a2737d22288b62ee70e0fab3486494ea4544', '2020-11-26 09:58:11', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('ec1a191f28cbcecb68417609e226bb624b5cda98', '2020-12-13 10:57:20', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('f0402bd4f594b63bd2c2b9200790a1604656b9fd', '2020-11-26 09:55:29', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('f1d39ac23d6e1c058640b7ec07df5e5043f75393', '2020-12-02 18:03:23', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('f23951ad21825f2a92ff63dc7432e9043c410c7e', '2020-11-26 09:54:34', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('f312d46f78d5fc7fa6315f10cb173b5a18c1eb74', '2020-12-18 08:38:43', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('f64ce34990d36e78f9976f59769444046a011468', '2020-11-26 10:25:04', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('f7047e3431ab2d7a408ddfb1c94736be4d993092', '2020-12-03 00:22:13', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('f97b7ff7c0942418f598d63d2816078d89fc37a7', '2020-11-26 09:56:17', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '456f8496-3a32-4f2e-99d5-50986a22a5cf', NULL, NULL, 1),
+('f9fd4d32fed01beaeabfd7cad2e5e164f4f66dc2', '2020-12-16 20:14:42', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', 'a56634a0-d5cb-43d9-bb60-45309aa218f7', NULL, NULL, 1),
+('fb8c2634c3d6dc9712818dc2d32fe49820979781', '2020-12-15 13:40:53', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('fcf233749ce1c5c56d5caf78d370a3222f5dad18', '2020-12-17 17:05:21', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '60b6d30e-fd48-45cb-930a-d7d0eedf9922', NULL, NULL, 1),
+('fd66a748ccf3a5868939e2e38c6524ed597af706', '2020-12-16 16:57:10', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1),
+('fdf4be5c1c13fe618fe741ca94bb3cf67c6cec8a', '2020-12-13 11:35:54', 'bearer', '74812fd6-51be-43f0-96e3-65034ee2f190', '3402fb53-fbac-4fab-97b7-1bceef96c3fa', NULL, NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `oauth_scope`
+--
+
+CREATE TABLE `oauth_scope` (
+  `id` int(11) NOT NULL,
+  `scope` varchar(255) DEFAULT NULL,
+  `is_default` tinyint(1) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `organization`
+--
+
+CREATE TABLE `organization` (
+  `id` varchar(36) NOT NULL,
+  `name` varchar(64) DEFAULT NULL,
+  `description` text,
+  `website` varchar(2000) DEFAULT NULL,
+  `image` varchar(255) DEFAULT 'default'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pep_proxy`
+--
+
+CREATE TABLE `pep_proxy` (
+  `id` varchar(255) NOT NULL,
+  `password` varchar(40) DEFAULT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL,
+  `salt` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pep_proxy`
+--
+
+INSERT INTO `pep_proxy` (`id`, `password`, `oauth_client_id`, `salt`) VALUES
+('pep_proxy_0e9c2405-ef69-4dc1-bbc4-eebaf2ee9e69', 'b536287c79f7fadfe424462c6b3a3f95c2171d93', '74812fd6-51be-43f0-96e3-65034ee2f190', '23083f342f1d06a7');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `permission`
+--
+
+CREATE TABLE `permission` (
+  `id` varchar(36) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `description` text,
+  `is_internal` tinyint(1) DEFAULT '0',
+  `action` varchar(255) DEFAULT NULL,
+  `resource` varchar(255) DEFAULT NULL,
+  `xml` text,
+  `oauth_client_id` varchar(36) DEFAULT NULL,
+  `is_regex` tinyint(1) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `permission`
+--
+
+INSERT INTO `permission` (`id`, `name`, `description`, `is_internal`, `action`, `resource`, `xml`, `oauth_client_id`, `is_regex`) VALUES
+('1', 'Get and assign all internal application roles', NULL, 1, NULL, NULL, NULL, 'idm_admin_app', 0),
+('2', 'Manage the application', NULL, 1, NULL, NULL, NULL, 'idm_admin_app', 0),
+('3', 'Manage roles', NULL, 1, NULL, NULL, NULL, 'idm_admin_app', 0),
+('4', 'Manage authorizations', NULL, 1, NULL, NULL, NULL, 'idm_admin_app', 0),
+('5', 'Get and assign all public application roles', NULL, 1, NULL, NULL, NULL, 'idm_admin_app', 0),
+('6', 'Get and assign only public owned roles', NULL, 1, NULL, NULL, NULL, 'idm_admin_app', 0),
+('c966035c-0813-4c2e-8fd3-166bd9266fbb', 'USER', 'Permission for users to access only their page', 0, 'GET', 'user.php', NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 0),
+('ea503add-57cb-499a-8d89-d3090f73e945', 'CINEMAOWNER', 'Permission for cinema owners to access only their page', 0, 'GET', 'owner.php', NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ptp`
+--
+
+CREATE TABLE `ptp` (
+  `id` int(11) NOT NULL,
+  `previous_job_id` varchar(255) NOT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role`
+--
+
+CREATE TABLE `role` (
+  `id` varchar(36) NOT NULL,
+  `name` varchar(64) DEFAULT NULL,
+  `is_internal` tinyint(1) DEFAULT '0',
+  `oauth_client_id` varchar(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `role`
+--
+
+INSERT INTO `role` (`id`, `name`, `is_internal`, `oauth_client_id`) VALUES
+('06410ff2-2db2-4f47-9c9c-679b64c7baad', 'USER', 0, '74812fd6-51be-43f0-96e3-65034ee2f190'),
+('b3ada708-8c4b-4815-a894-d55aa4c755ef', 'CINEMAOWNER', 0, '74812fd6-51be-43f0-96e3-65034ee2f190'),
+('provider', 'Provider', 1, 'idm_admin_app'),
+('purchaser', 'Purchaser', 1, 'idm_admin_app');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role_assignment`
+--
+
+CREATE TABLE `role_assignment` (
+  `id` int(11) NOT NULL,
+  `role_organization` varchar(255) DEFAULT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL,
+  `role_id` varchar(36) DEFAULT NULL,
+  `organization_id` varchar(36) DEFAULT NULL,
+  `user_id` varchar(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `role_assignment`
+--
+
+INSERT INTO `role_assignment` (`id`, `role_organization`, `oauth_client_id`, `role_id`, `organization_id`, `user_id`) VALUES
+(40, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'provider', NULL, 'admin'),
+(41, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'purchaser', NULL, 'admin'),
+(42, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'b3ada708-8c4b-4815-a894-d55aa4c755ef', NULL, '5e98ac10-8484-4c71-a961-58b42534c0bf'),
+(43, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'b3ada708-8c4b-4815-a894-d55aa4c755ef', NULL, 'a78eb230-aa83-4340-9b34-f6a36162731b'),
+(44, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'b3ada708-8c4b-4815-a894-d55aa4c755ef', NULL, 'bbe6276f-c871-4274-96f4-e8a7105448a4'),
+(45, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'b3ada708-8c4b-4815-a894-d55aa4c755ef', NULL, 'c4a850ce-dc48-4d9d-ae70-9fcbf8c43e62'),
+(46, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', 'b3ada708-8c4b-4815-a894-d55aa4c755ef', NULL, '9d73966c-986d-4832-9f84-ecee49b85b4e'),
+(47, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '06410ff2-2db2-4f47-9c9c-679b64c7baad', NULL, '456f8496-3a32-4f2e-99d5-50986a22a5cf'),
+(48, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '06410ff2-2db2-4f47-9c9c-679b64c7baad', NULL, 'bee6b611-ad01-49c5-a635-40dc70c5b3bc'),
+(49, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '06410ff2-2db2-4f47-9c9c-679b64c7baad', NULL, '3402fb53-fbac-4fab-97b7-1bceef96c3fa'),
+(50, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '06410ff2-2db2-4f47-9c9c-679b64c7baad', NULL, '2483edd9-4ee0-43cd-92d8-bcde393df687'),
+(51, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '06410ff2-2db2-4f47-9c9c-679b64c7baad', NULL, 'a56634a0-d5cb-43d9-bb60-45309aa218f7'),
+(52, NULL, '74812fd6-51be-43f0-96e3-65034ee2f190', '06410ff2-2db2-4f47-9c9c-679b64c7baad', NULL, '60b6d30e-fd48-45cb-930a-d7d0eedf9922');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role_permission`
+--
+
+CREATE TABLE `role_permission` (
+  `id` int(11) NOT NULL,
+  `role_id` varchar(36) DEFAULT NULL,
+  `permission_id` varchar(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `role_permission`
+--
+
+INSERT INTO `role_permission` (`id`, `role_id`, `permission_id`) VALUES
+(1, 'provider', '1'),
+(2, 'provider', '2'),
+(3, 'provider', '3'),
+(4, 'provider', '4'),
+(5, 'provider', '5'),
+(6, 'provider', '6'),
+(7, 'purchaser', '5'),
+(10, 'b3ada708-8c4b-4815-a894-d55aa4c755ef', 'ea503add-57cb-499a-8d89-d3090f73e945'),
+(11, '06410ff2-2db2-4f47-9c9c-679b64c7baad', 'c966035c-0813-4c2e-8fd3-166bd9266fbb');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `role_usage_policy`
+--
+
+CREATE TABLE `role_usage_policy` (
+  `id` int(11) NOT NULL,
+  `role_id` varchar(36) DEFAULT NULL,
+  `usage_policy_id` varchar(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `SequelizeMeta`
+--
+
+CREATE TABLE `SequelizeMeta` (
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `SequelizeMeta`
+--
+
+INSERT INTO `SequelizeMeta` (`name`) VALUES
+('201802190000-CreateUserTable.js'),
+('201802190003-CreateUserRegistrationProfileTable.js'),
+('201802190005-CreateOrganizationTable.js'),
+('201802190008-CreateOAuthClientTable.js'),
+('201802190009-CreateUserAuthorizedApplicationTable.js'),
+('201802190010-CreateRoleTable.js'),
+('201802190015-CreatePermissionTable.js'),
+('201802190020-CreateRoleAssignmentTable.js'),
+('201802190025-CreateRolePermissionTable.js'),
+('201802190030-CreateUserOrganizationTable.js'),
+('201802190035-CreateIotTable.js'),
+('201802190040-CreatePepProxyTable.js'),
+('201802190045-CreateAuthZForceTable.js'),
+('201802190050-CreateAuthTokenTable.js'),
+('201802190060-CreateOAuthAuthorizationCodeTable.js'),
+('201802190065-CreateOAuthAccessTokenTable.js'),
+('201802190070-CreateOAuthRefreshTokenTable.js'),
+('201802190075-CreateOAuthScopeTable.js'),
+('20180405125424-CreateUserTourAttribute.js'),
+('20180612134640-CreateEidasTable.js'),
+('20180727101745-CreateUserEidasIdAttribute.js'),
+('20180730094347-CreateTrustedApplicationsTable.js'),
+('20180828133454-CreatePasswordSalt.js'),
+('20180921104653-CreateEidasNifColumn.js'),
+('20180922140934-CreateOauthTokenType.js'),
+('20181022103002-CreateEidasTypeAndAttributes.js'),
+('20181108144720-RevokeToken.js'),
+('20181113121450-FixExtraAndScopeAttribute.js'),
+('20181203120316-FixTokenTypesLength.js'),
+('20190116101526-CreateSignOutUrl.js'),
+('20190316203230-CreatePermissionIsRegex.js'),
+('20190429164755-CreateUsagePolicyTable.js'),
+('20190507112246-CreateRoleUsagePolicyTable.js'),
+('20190507112259-CreatePtpTable.js'),
+('20191019153205-UpdateUserAuthorizedApplicationTable.js'),
+('20200928134556-AddDisable2faKey.js');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trusted_application`
+--
+
+CREATE TABLE `trusted_application` (
+  `id` int(11) NOT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL,
+  `trusted_oauth_client_id` varchar(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `usage_policy`
+--
+
+CREATE TABLE `usage_policy` (
+  `id` varchar(36) NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `type` enum('COUNT_POLICY','AGGREGATION_POLICY','CUSTOM_POLICY') DEFAULT NULL,
+  `parameters` json DEFAULT NULL,
+  `punishment` enum('KILL_JOB','UNSUBSCRIBE','MONETIZE') DEFAULT NULL,
+  `from` time DEFAULT NULL,
+  `to` time DEFAULT NULL,
+  `odrl` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `oauth_client_id` varchar(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` varchar(36) NOT NULL,
+  `username` varchar(64) DEFAULT NULL,
+  `description` text,
+  `website` varchar(2000) DEFAULT NULL,
+  `image` varchar(255) DEFAULT 'default',
+  `gravatar` tinyint(1) DEFAULT '0',
+  `email` varchar(255) DEFAULT NULL,
+  `password` varchar(40) DEFAULT NULL,
+  `date_password` datetime DEFAULT NULL,
+  `enabled` tinyint(1) DEFAULT '0',
+  `admin` tinyint(1) DEFAULT '0',
+  `extra` json DEFAULT NULL,
+  `scope` varchar(2000) DEFAULT NULL,
+  `starters_tour_ended` tinyint(1) DEFAULT '0',
+  `eidas_id` varchar(255) DEFAULT NULL,
+  `salt` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `description`, `website`, `image`, `gravatar`, `email`, `password`, `date_password`, `enabled`, `admin`, `extra`, `scope`, `starters_tour_ended`, `eidas_id`, `salt`) VALUES
+('14c4baab-212d-45ce-b8ad-e28204702d01', 'BrennaD', '', '', 'default', 0, 'bdaniel@gmail.com', '43151e79b2fe59f2d1bc6c6004c66e49dd6c2542', '2020-11-13 11:54:22', 0, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, '262d0f73b034cc43'),
+('2483edd9-4ee0-43cd-92d8-bcde393df687', 'JaggerE', '', '', 'default', 0, 'jellis@gmail.com', '8c58c3403586ac84a8c801b724ef849b39026196', '2020-11-13 11:52:49', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, 'e53ff9a5592889a6'),
+('3402fb53-fbac-4fab-97b7-1bceef96c3fa', 'AlainaM', '', '', 'default', 0, 'amckenzie@gmail.com', '6cae68710c8f8807bd0ede6676dd016583766631', '2020-11-13 11:51:46', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, '316bf4d11911ee6c'),
+('456f8496-3a32-4f2e-99d5-50986a22a5cf', 'MitchM', 'cinema owner', '', 'default', 0, 'Mitch@test.com', 'f1be9cf4769790ef74daf8e6b69c5a8737c4ca0b', '2020-11-09 10:26:05', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, '8c0d4e3c5ff69517'),
+('5e98ac10-8484-4c71-a961-58b42534c0bf', 'KhaleesiG', '', '', 'default', 0, 'kguest@gmail.com', 'c7b305678886e307851e73c3f64e18ec209456c9', '2020-11-13 10:44:20', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, '2263baa5f968bba2'),
+('60b6d30e-fd48-45cb-930a-d7d0eedf9922', 'QuentinP', '', '', 'default', 0, 'qporter@gmail.com', '9e82f53912c503d9eeed03f65cf9275504498413', '2020-11-13 11:53:47', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, '54dc36150c816faa'),
+('9d73966c-986d-4832-9f84-ecee49b85b4e', 'BlaineT', '', '', 'default', 0, 'btapia@gmail.com', '24911f5a7e7f37056bac8c51301f8223990d5d9a', '2020-11-13 10:47:44', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, 'f0325c2b55addf74'),
+('a56634a0-d5cb-43d9-bb60-45309aa218f7', 'DawsonR', '', '', 'default', 0, 'rross@gmail.com', 'e2cca183b712e5b05ec99d9ac3476aa818d21771', '2020-11-13 11:53:15', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, '827eb5a842d9d765'),
+('a78eb230-aa83-4340-9b34-f6a36162731b', 'BlairM', '', '', 'default', 0, 'bmcmahon@gmail.com', 'c26e38b5eddfd7e436c2e42c6f5680105f8104d3', '2020-11-13 10:45:13', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, '7215a5f570958773'),
+('admin', 'admin', NULL, NULL, 'default', 0, 'admin@test.com', '8ee2033f8de2137b31069ad1d967461e768991fb', '2020-11-09 09:54:22', 1, 1, '{\"visible_attributes\": [\"username\", \"description\"]}', NULL, 0, NULL, 'fc0ed157dd8edf5d'),
+('bbe6276f-c871-4274-96f4-e8a7105448a4', 'ElianaM', '', '', 'default', 0, 'emiranda@gmail.com', '388bec81545f186115410a9ebea2a6c4a4431a3c', '2020-11-13 10:46:00', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, '37d23d406d4ed44e'),
+('bee6b611-ad01-49c5-a635-40dc70c5b3bc', 'MosheR', '', '', 'default', 0, 'mrangel@gmail.com', 'b3e0d22ac0714c8884f7f52160d4093b23ad9f43', '2020-11-13 11:52:17', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, '7133d9e12d3413ba'),
+('c4a850ce-dc48-4d9d-ae70-9fcbf8c43e62', 'PrinceG', '', '', 'default', 0, 'pgreig@gmail.com', '2dad6c78137a3fd59409b6f9f3c218ab7aeb4d30', '2020-11-13 10:47:02', 1, 0, '{\"visible_attributes\": [\"username\", \"description\", \"website\", \"identity_attributes\", \"image\", \"gravatar\"]}', NULL, 0, NULL, '7555a41334aba806');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_authorized_application`
+--
+
+CREATE TABLE `user_authorized_application` (
+  `id` int(11) NOT NULL,
+  `user_id` varchar(36) DEFAULT NULL,
+  `oauth_client_id` varchar(36) DEFAULT NULL,
+  `shared_attributes` varchar(255) DEFAULT NULL,
+  `login_date` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user_authorized_application`
+--
+
+INSERT INTO `user_authorized_application` (`id`, `user_id`, `oauth_client_id`, `shared_attributes`, `login_date`) VALUES
+(1, 'admin', '74812fd6-51be-43f0-96e3-65034ee2f190', 'username,email,identity_attributes,image,gravatar,eidas_profile', '2020-11-09 21:36:58'),
+(2, '456f8496-3a32-4f2e-99d5-50986a22a5cf', '74812fd6-51be-43f0-96e3-65034ee2f190', 'username,email,identity_attributes,image,gravatar,eidas_profile', '2020-11-10 12:27:21'),
+(3, '5e98ac10-8484-4c71-a961-58b42534c0bf', '74812fd6-51be-43f0-96e3-65034ee2f190', 'username,email', '2020-11-19 10:53:46'),
+(4, '3402fb53-fbac-4fab-97b7-1bceef96c3fa', '74812fd6-51be-43f0-96e3-65034ee2f190', 'username,email', '2020-11-27 11:46:55'),
+(5, '2483edd9-4ee0-43cd-92d8-bcde393df687', '74812fd6-51be-43f0-96e3-65034ee2f190', 'username,email', '2020-11-27 11:51:19'),
+(6, 'bee6b611-ad01-49c5-a635-40dc70c5b3bc', '74812fd6-51be-43f0-96e3-65034ee2f190', 'username,email', '2020-11-27 11:51:57'),
+(7, 'a56634a0-d5cb-43d9-bb60-45309aa218f7', '74812fd6-51be-43f0-96e3-65034ee2f190', 'username,email', '2020-12-02 20:14:42'),
+(8, '60b6d30e-fd48-45cb-930a-d7d0eedf9922', '74812fd6-51be-43f0-96e3-65034ee2f190', 'username,email', '2020-12-02 20:16:07');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_organization`
+--
+
+CREATE TABLE `user_organization` (
+  `id` int(11) NOT NULL,
+  `role` varchar(10) DEFAULT NULL,
+  `user_id` varchar(36) DEFAULT NULL,
+  `organization_id` varchar(36) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_registration_profile`
+--
+
+CREATE TABLE `user_registration_profile` (
+  `id` int(11) NOT NULL,
+  `activation_key` varchar(255) DEFAULT NULL,
+  `activation_expires` datetime DEFAULT NULL,
+  `reset_key` varchar(255) DEFAULT NULL,
+  `reset_expires` datetime DEFAULT NULL,
+  `verification_key` varchar(255) DEFAULT NULL,
+  `verification_expires` datetime DEFAULT NULL,
+  `user_email` varchar(255) DEFAULT NULL,
+  `disable_2fa_key` varchar(255) DEFAULT NULL,
+  `disable_2fa_expires` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `authzforce`
+--
+ALTER TABLE `authzforce`
+  ADD PRIMARY KEY (`az_domain`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`);
+
+--
+-- Indexes for table `auth_token`
+--
+ALTER TABLE `auth_token`
+  ADD PRIMARY KEY (`access_token`),
+  ADD UNIQUE KEY `access_token` (`access_token`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `pep_proxy_id` (`pep_proxy_id`);
+
+--
+-- Indexes for table `eidas_credentials`
+--
+ALTER TABLE `eidas_credentials`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`),
+  ADD UNIQUE KEY `oauth_client_id` (`oauth_client_id`);
+
+--
+-- Indexes for table `iot`
+--
+ALTER TABLE `iot`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`);
+
+--
+-- Indexes for table `oauth_access_token`
+--
+ALTER TABLE `oauth_access_token`
+  ADD PRIMARY KEY (`access_token`),
+  ADD UNIQUE KEY `access_token` (`access_token`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `iot_id` (`iot_id`),
+  ADD KEY `refresh_token` (`refresh_token`),
+  ADD KEY `authorization_code_at` (`authorization_code`);
+
+--
+-- Indexes for table `oauth_authorization_code`
+--
+ALTER TABLE `oauth_authorization_code`
+  ADD PRIMARY KEY (`authorization_code`),
+  ADD UNIQUE KEY `authorization_code` (`authorization_code`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `oauth_client`
+--
+ALTER TABLE `oauth_client`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Indexes for table `oauth_refresh_token`
+--
+ALTER TABLE `oauth_refresh_token`
+  ADD PRIMARY KEY (`refresh_token`),
+  ADD UNIQUE KEY `refresh_token` (`refresh_token`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `iot_id` (`iot_id`),
+  ADD KEY `authorization_code_rt` (`authorization_code`);
+
+--
+-- Indexes for table `oauth_scope`
+--
+ALTER TABLE `oauth_scope`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Indexes for table `organization`
+--
+ALTER TABLE `organization`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`);
+
+--
+-- Indexes for table `pep_proxy`
+--
+ALTER TABLE `pep_proxy`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`);
+
+--
+-- Indexes for table `permission`
+--
+ALTER TABLE `permission`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`);
+
+--
+-- Indexes for table `ptp`
+--
+ALTER TABLE `ptp`
+  ADD PRIMARY KEY (`id`,`previous_job_id`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`);
+
+--
+-- Indexes for table `role`
+--
+ALTER TABLE `role`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`);
+
+--
+-- Indexes for table `role_assignment`
+--
+ALTER TABLE `role_assignment`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`),
+  ADD KEY `role_id` (`role_id`),
+  ADD KEY `organization_id` (`organization_id`),
+  ADD KEY `user_id` (`user_id`);
+
+--
+-- Indexes for table `role_permission`
+--
+ALTER TABLE `role_permission`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `role_id` (`role_id`),
+  ADD KEY `permission_id` (`permission_id`);
+
+--
+-- Indexes for table `role_usage_policy`
+--
+ALTER TABLE `role_usage_policy`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `role_id` (`role_id`),
+  ADD KEY `usage_policy_id` (`usage_policy_id`);
+
+--
+-- Indexes for table `SequelizeMeta`
+--
+ALTER TABLE `SequelizeMeta`
+  ADD PRIMARY KEY (`name`),
+  ADD UNIQUE KEY `name` (`name`);
+
+--
+-- Indexes for table `trusted_application`
+--
+ALTER TABLE `trusted_application`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`),
+  ADD KEY `trusted_oauth_client_id` (`trusted_oauth_client_id`);
+
+--
+-- Indexes for table `usage_policy`
+--
+ALTER TABLE `usage_policy`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `id` (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Indexes for table `user_authorized_application`
+--
+ALTER TABLE `user_authorized_application`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `oauth_client_id` (`oauth_client_id`);
+
+--
+-- Indexes for table `user_organization`
+--
+ALTER TABLE `user_organization`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `organization_id` (`organization_id`);
+
+--
+-- Indexes for table `user_registration_profile`
+--
+ALTER TABLE `user_registration_profile`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `user_email` (`user_email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `oauth_scope`
+--
+ALTER TABLE `oauth_scope`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `ptp`
+--
+ALTER TABLE `ptp`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `role_assignment`
+--
+ALTER TABLE `role_assignment`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+
+--
+-- AUTO_INCREMENT for table `role_permission`
+--
+ALTER TABLE `role_permission`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `role_usage_policy`
+--
+ALTER TABLE `role_usage_policy`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `trusted_application`
+--
+ALTER TABLE `trusted_application`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `user_authorized_application`
+--
+ALTER TABLE `user_authorized_application`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `user_organization`
+--
+ALTER TABLE `user_organization`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `user_registration_profile`
+--
+ALTER TABLE `user_registration_profile`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `authzforce`
+--
+ALTER TABLE `authzforce`
+  ADD CONSTRAINT `authzforce_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `auth_token`
+--
+ALTER TABLE `auth_token`
+  ADD CONSTRAINT `auth_token_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `auth_token_ibfk_2` FOREIGN KEY (`pep_proxy_id`) REFERENCES `pep_proxy` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `eidas_credentials`
+--
+ALTER TABLE `eidas_credentials`
+  ADD CONSTRAINT `eidas_credentials_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `iot`
+--
+ALTER TABLE `iot`
+  ADD CONSTRAINT `iot_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `oauth_access_token`
+--
+ALTER TABLE `oauth_access_token`
+  ADD CONSTRAINT `authorization_code_at` FOREIGN KEY (`authorization_code`) REFERENCES `oauth_authorization_code` (`authorization_code`) ON DELETE CASCADE,
+  ADD CONSTRAINT `oauth_access_token_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `oauth_access_token_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `oauth_access_token_ibfk_3` FOREIGN KEY (`iot_id`) REFERENCES `iot` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `refresh_token` FOREIGN KEY (`refresh_token`) REFERENCES `oauth_refresh_token` (`refresh_token`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `oauth_authorization_code`
+--
+ALTER TABLE `oauth_authorization_code`
+  ADD CONSTRAINT `oauth_authorization_code_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `oauth_authorization_code_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `oauth_refresh_token`
+--
+ALTER TABLE `oauth_refresh_token`
+  ADD CONSTRAINT `authorization_code_rt` FOREIGN KEY (`authorization_code`) REFERENCES `oauth_authorization_code` (`authorization_code`) ON DELETE CASCADE,
+  ADD CONSTRAINT `oauth_refresh_token_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `oauth_refresh_token_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `oauth_refresh_token_ibfk_3` FOREIGN KEY (`iot_id`) REFERENCES `iot` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `pep_proxy`
+--
+ALTER TABLE `pep_proxy`
+  ADD CONSTRAINT `pep_proxy_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `permission`
+--
+ALTER TABLE `permission`
+  ADD CONSTRAINT `permission_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `ptp`
+--
+ALTER TABLE `ptp`
+  ADD CONSTRAINT `ptp_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `role`
+--
+ALTER TABLE `role`
+  ADD CONSTRAINT `role_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `role_assignment`
+--
+ALTER TABLE `role_assignment`
+  ADD CONSTRAINT `role_assignment_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `role_assignment_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `role_assignment_ibfk_3` FOREIGN KEY (`organization_id`) REFERENCES `organization` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `role_assignment_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `role_permission`
+--
+ALTER TABLE `role_permission`
+  ADD CONSTRAINT `role_permission_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `role_permission_ibfk_2` FOREIGN KEY (`permission_id`) REFERENCES `permission` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `role_usage_policy`
+--
+ALTER TABLE `role_usage_policy`
+  ADD CONSTRAINT `role_usage_policy_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `role_usage_policy_ibfk_2` FOREIGN KEY (`usage_policy_id`) REFERENCES `usage_policy` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `trusted_application`
+--
+ALTER TABLE `trusted_application`
+  ADD CONSTRAINT `trusted_application_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `trusted_application_ibfk_2` FOREIGN KEY (`trusted_oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `usage_policy`
+--
+ALTER TABLE `usage_policy`
+  ADD CONSTRAINT `usage_policy_ibfk_1` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `user_authorized_application`
+--
+ALTER TABLE `user_authorized_application`
+  ADD CONSTRAINT `user_authorized_application_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `user_authorized_application_ibfk_2` FOREIGN KEY (`oauth_client_id`) REFERENCES `oauth_client` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `user_organization`
+--
+ALTER TABLE `user_organization`
+  ADD CONSTRAINT `user_organization_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `user_organization_ibfk_2` FOREIGN KEY (`organization_id`) REFERENCES `organization` (`id`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `user_registration_profile`
+--
+ALTER TABLE `user_registration_profile`
+  ADD CONSTRAINT `user_registration_profile_ibfk_1` FOREIGN KEY (`user_email`) REFERENCES `user` (`email`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

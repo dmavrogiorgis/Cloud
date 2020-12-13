@@ -1,0 +1,2398 @@
+[{
+  "_id": {
+    "$oid": "5fca5fed6ef84cdb8169e133"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "bee6b611-ad01-49c5-a635-40dc70c5b3bc",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0335",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098349,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098349,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca5fef6ef84cdb8169e134"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "bee6b611-ad01-49c5-a635-40dc70c5b3bc",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0338",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098351,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098351,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca5ff06ef84cdb8169e135"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "bee6b611-ad01-49c5-a635-40dc70c5b3bc",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033a",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098352,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098352,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca5ff36ef84cdb8169e136"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "bee6b611-ad01-49c5-a635-40dc70c5b3bc",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033c",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098355,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098355,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca5ff46ef84cdb8169e137"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "bee6b611-ad01-49c5-a635-40dc70c5b3bc",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033d",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098356,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098356,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca5ff66ef84cdb8169e138"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "bee6b611-ad01-49c5-a635-40dc70c5b3bc",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0341",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098358,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098358,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca5ff86ef84cdb8169e139"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "bee6b611-ad01-49c5-a635-40dc70c5b3bc",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0345",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098360,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098360,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca5ff96ef84cdb8169e13a"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "bee6b611-ad01-49c5-a635-40dc70c5b3bc",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0347",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098361,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098361,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60206ef84cdb8169e13b"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "2483edd9-4ee0-43cd-92d8-bcde393df687",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0335",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098400,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098401,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60226ef84cdb8169e13c"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "2483edd9-4ee0-43cd-92d8-bcde393df687",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0338",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098402,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098402,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60246ef84cdb8169e13d"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "2483edd9-4ee0-43cd-92d8-bcde393df687",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033b",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098404,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098404,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60266ef84cdb8169e13e"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "2483edd9-4ee0-43cd-92d8-bcde393df687",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0341",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098406,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098406,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60296ef84cdb8169e13f"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "2483edd9-4ee0-43cd-92d8-bcde393df687",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0347",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098409,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098409,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca602b6ef84cdb8169e140"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "2483edd9-4ee0-43cd-92d8-bcde393df687",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b034d",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098411,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098411,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca602d6ef84cdb8169e141"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "2483edd9-4ee0-43cd-92d8-bcde393df687",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0356",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098413,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098413,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca602f6ef84cdb8169e142"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "2483edd9-4ee0-43cd-92d8-bcde393df687",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0358",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098415,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098415,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60326ef84cdb8169e143"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "2483edd9-4ee0-43cd-92d8-bcde393df687",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b035d",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098418,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098418,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60346ef84cdb8169e144"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "2483edd9-4ee0-43cd-92d8-bcde393df687",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b035f",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098420,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098420,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca607c6ef84cdb8169e145"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "a56634a0-d5cb-43d9-bb60-45309aa218f7",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0335",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098492,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098492,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca607e6ef84cdb8169e146"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "a56634a0-d5cb-43d9-bb60-45309aa218f7",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0338",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098494,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098494,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60806ef84cdb8169e147"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "a56634a0-d5cb-43d9-bb60-45309aa218f7",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033a",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098496,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098496,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60816ef84cdb8169e148"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "a56634a0-d5cb-43d9-bb60-45309aa218f7",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033c",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098497,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098497,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60846ef84cdb8169e149"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "a56634a0-d5cb-43d9-bb60-45309aa218f7",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033f",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098500,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098500,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60866ef84cdb8169e14a"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "a56634a0-d5cb-43d9-bb60-45309aa218f7",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0342",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098502,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098502,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca60886ef84cdb8169e14b"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "a56634a0-d5cb-43d9-bb60-45309aa218f7",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0349",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098504,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098504,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca608a6ef84cdb8169e14c"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "a56634a0-d5cb-43d9-bb60-45309aa218f7",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b034c",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098506,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098506,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca608d6ef84cdb8169e14d"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "a56634a0-d5cb-43d9-bb60-45309aa218f7",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0350",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098509,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098509,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca608f6ef84cdb8169e14e"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "a56634a0-d5cb-43d9-bb60-45309aa218f7",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0359",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098511,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098512,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca61fe6ef84cdb8169e14f"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0335",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098878,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098878,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62006ef84cdb8169e150"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0337",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098880,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098880,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62026ef84cdb8169e151"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033a",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098882,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098882,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62046ef84cdb8169e152"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033d",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098884,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098884,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62066ef84cdb8169e153"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033f",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098886,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098886,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62086ef84cdb8169e154"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0343",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098888,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098888,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca620a6ef84cdb8169e155"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0345",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098890,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098890,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca620d6ef84cdb8169e156"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b034e",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098893,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098893,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62116ef84cdb8169e157"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b035e",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098897,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098897,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62136ef84cdb8169e158"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0362",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098899,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098899,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62166ef84cdb8169e159"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "60b6d30e-fd48-45cb-930a-d7d0eedf9922",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fc3f7768e4a091e9e731213",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098902,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098902,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62776ef84cdb8169e15a"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0335",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607098999,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607098999,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62796ef84cdb8169e15b"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0337",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099001,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099001,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca627c6ef84cdb8169e15c"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0339",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099004,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099004,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca627d6ef84cdb8169e15d"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033a",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099005,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099005,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62806ef84cdb8169e15e"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033e",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099008,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099008,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62816ef84cdb8169e15f"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0341",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099009,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099009,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62876ef84cdb8169e160"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fc3f7768e4a091e9e731213",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099015,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099015,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62896ef84cdb8169e161"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fc8f2e0e1b8263b415803ce",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099017,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099017,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca628e6ef84cdb8169e162"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0334",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099022,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099022,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62906ef84cdb8169e163"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0336",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099024,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099024,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca62b26ef84cdb8169e164"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b033c",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099058,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099058,
+  "lastSuccessCode": 200
+},{
+  "_id": {
+    "$oid": "5fca63346ef84cdb8169e165"
+  },
+  "expiration": 2209039200,
+  "reference": "http://172.18.1.8/app_logic_orion.php",
+  "custom": false,
+  "throttling": 5,
+  "servicePath": "/#",
+  "description": "3402fb53-fbac-4fab-97b7-1bceef96c3fa",
+  "status": "active",
+  "entities": [
+    {
+      "id": "5fae5a9dd66b1e67456b0359",
+      "isPattern": "false",
+      "type": "Movie",
+      "isTypePattern": false
+    }
+  ],
+  "attrs": [
+    "isComingSoon",
+    "isPlaying",
+    "title",
+    "start_date",
+    "end_date",
+    "category",
+    "cinema_id"
+  ],
+  "metadata": [],
+  "blacklist": false,
+  "onlyChanged": false,
+  "conditions": [
+    "isComingSoon",
+    "isPlaying"
+  ],
+  "lastNotification": 1607099188,
+  "count": 1,
+  "expression": {
+    "q": "",
+    "mq": "",
+    "geometry": "",
+    "coords": "",
+    "georel": ""
+  },
+  "format": "normalized",
+  "lastSuccess": 1607099188,
+  "lastSuccessCode": 200
+}]
