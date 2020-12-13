@@ -54,7 +54,7 @@ services:
     volumes:
       - ./WebApp/:/var/www/html/
     ports:
-      - "30001:80"
+      - "80:80"
     networks:
       default:
         ipv4_address: 172.18.1.7
