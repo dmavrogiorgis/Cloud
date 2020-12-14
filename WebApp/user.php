@@ -12,7 +12,7 @@
     <title> User - Movies & Cinemas </title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="style_notification_bar.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         function myFunction() {
             document.getElementById("myDropdown").classList.toggle("show");
@@ -80,7 +80,7 @@
                     curl_close($curl);
                     
                     $data_array = json_decode($response,true);
-
+                        
                     if(is_array($data_array) || is_object($data_array)){
                         foreach($data_array as $movie) {
                 ?>
@@ -197,7 +197,7 @@
     </div>
 
     <!--************************************************************SCRIPTS************************************************************-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
         setInterval(ajax_call, 5000); // Send an ajax every 5 sec

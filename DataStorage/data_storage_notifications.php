@@ -80,7 +80,7 @@
 
         foreach ($cursor as $document) {
 
-            $cursor_update = $collection->updateOne(
+            $cursor_update = $collection->updateMany(
                 [ 
                     'not_id' => $document->Notifications->not_id,
                     'movie_id' => $document->Notifications->movie_id
