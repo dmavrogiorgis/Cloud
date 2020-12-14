@@ -7,7 +7,7 @@
 
     $user = "root";
     $pwd = 'rootpassword';
-    $mongoclient = new Client("mongodb://${user}:${pwd}@mongo_db:27017");    
+    $mongoclient = new Client("mongodb://mongo_db:27017");    
 
     if($_GET['request_type'] == "GET_NEW_NOTIFICATION" && isset($_GET['user_id'])){
         $collection = $mongoclient->cloud_mongo_db->Notifications;
@@ -80,7 +80,7 @@
 
         foreach ($cursor as $document) {
 
-            $cursor_update = $collection->updateMany(
+            $cursor_update = $collection->updateOne(
                 [ 
                     'not_id' => $document->Notifications->not_id,
                     'movie_id' => $document->Notifications->movie_id

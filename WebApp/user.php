@@ -218,7 +218,7 @@
                     var session_user_id = '<?php echo $_SESSION['user_id']?>';
 
                     var new_notif = JSON.parse(data);
-
+                    console.log(new_notif);
                     for(var i=0; i< new_notif.length; i++){
                         var table = document.getElementById('notificationTable').getElementsByTagName('tbody')[0];
                         var row = table.insertRow(0);

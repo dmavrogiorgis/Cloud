@@ -8,7 +8,7 @@
 
     $user = "root";
     $pwd = 'rootpassword';
-    $mongoclient = new Client("mongodb://${user}:${pwd}@mongo_db:27017");    
+    $mongoclient = new Client("mongodb://mongo_db:27017");    
     
     /* AJAX REQUEST FOR INSERT A NEW CINEMA NAME */
     if($_GET['request_type'] == "INSERT_A_CINEMA" && isset($_GET['user_id']) && isset($_GET['cinema_name'])){
