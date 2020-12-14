@@ -261,7 +261,7 @@
     </div>
 
     <!--************************************************************SCRIPTS************************************************************-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
     <script>
         $(document).ready(function() {
             $(document).on('click', '.btn-add', function() {

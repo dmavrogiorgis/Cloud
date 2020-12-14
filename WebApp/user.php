@@ -197,7 +197,7 @@
     </div>
 
     <!--************************************************************SCRIPTS************************************************************-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
     <script>
 
         setInterval(ajax_call, 5000); // Send an ajax every 5 sec
