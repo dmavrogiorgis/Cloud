@@ -198,16 +198,19 @@
 
     <!--************************************************************SCRIPTS************************************************************-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="global.js"></script>
     <script>
-
+        
         setInterval(ajax_call, 5000); // Send an ajax every 5 sec
 
         function ajax_call(){
             var access_token = '<?php echo $_SESSION['access_token']?>';
             var user_id = '<?php echo $_SESSION['user_id']?>';
 
+            var app_logic_url = docker_or_gcp_ip.concat("app_logic_notifications.php");
+
             $.ajax({
-                url: 'http://172.18.1.8/app_logic_notifications.php',
+                url: app_logic_url,
                 method: "GET",
                 data: {
                     request_type: 'GET_NEW_NOTIFICATION',
@@ -256,8 +259,10 @@
                 var user_id = query_info[2];
                 var like_movie = query_info[3];
 
+                var app_logic_url = docker_or_gcp_ip.concat("app_logic_mongo.php");
+
                 $.ajax({
-                    url: 'http://172.18.1.8/app_logic_mongo.php',
+                    url: app_logic_url,
                     method: "GET",
                     data: {
                         request_type: 'ADD_REMOVE_FAVOURITES',
@@ -277,8 +282,10 @@
                 var access_token = '<?php echo $_SESSION['access_token']?>';
                 var regex = $(this).val();
                 
+                var app_logic_url = docker_or_gcp_ip.concat("app_logic_mongo.php");
+
                 $.ajax({
-                    url: 'http://172.18.1.8/app_logic_mongo.php',
+                    url: app_logic_url,
                     method: "GET",
                     data: {
                         request_type: 'SEARCH_MOVIES',
@@ -302,8 +309,10 @@
                     var user_id = '<?php echo $_SESSION['user_id']?>';
                     var access_token = '<?php echo $_SESSION['access_token']?>';
 
+                    var app_logic_url = docker_or_gcp_ip.concat("app_logic_mongo.php");
+
                     $.ajax({
-                        url: 'http://172.18.1.8/app_logic_mongo.php',
+                        url: app_logic_url,
                         method: "GET",
                         data: {
                             request_type: 'SEARCH_MOVIES_BY_DATE',

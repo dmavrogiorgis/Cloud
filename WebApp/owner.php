@@ -262,6 +262,7 @@
 
     <!--************************************************************SCRIPTS************************************************************-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="global.js"></script>
     <script>
         $(document).ready(function() {
             $(document).on('click', '.btn-add', function() {
@@ -282,8 +283,10 @@
                     var access_token = query_info[1];
                     var user_id = query_info[2];
 
+                    var app_logic_url = docker_or_gcp_ip.concat("app_logic_mongo.php");
+
                     $.ajax({
-                        url:  'http://172.18.1.8/app_logic_mongo.php',
+                        url:  app_logic_url,
                         method: "GET",
                         data: {
                             request_type: 'INSERT_A_CINEMA',
@@ -319,8 +322,10 @@
                     var access_token = query_info[1];
                     var user_id = query_info[2];
 
+                    var app_logic_url = docker_or_gcp_ip.concat("app_logic_mongo.php");
+
                     $.ajax({
-                        url:  'http://172.18.1.8/app_logic_mongo.php',
+                        url:  app_logic_url,
                         method: "GET",
                         data: {
                             request_type: 'INSERT_A_MOVIE',
@@ -346,8 +351,10 @@
                 var movie_id = query_info[0];
                 var access_token = query_info[1];
                 
+                var app_logic_url = docker_or_gcp_ip.concat("app_logic_mongo.php");
+
                 $.ajax({
-                    url: 'http://172.18.1.8/app_logic_mongo.php',  
+                    url: app_logic_url,  
                     method: "GET",
                     data: {
                         request_type: 'GET_A_MOVIE',
@@ -387,8 +394,10 @@
                     var access_token = query_info[1];
                     var user_id = query_info[2];
 
+                    var app_logic_url = docker_or_gcp_ip.concat("app_logic_mongo.php");
+
                     $.ajax({
-                        url: 'http://172.18.1.8/app_logic_mongo.php', 
+                        url: app_logic_url, 
                         method: "GET",
                         data: {
                             request_type: 'UPDATE_A_MOVIE',
@@ -419,8 +428,10 @@
                         var access_token = query_info[1];
                         var user_id = query_info[2];
 
+                        var app_logic_url = docker_or_gcp_ip.concat("app_logic_mongo.php");
+
                         $.ajax({
-                            url: 'http://172.18.1.8/app_logic_mongo.php',
+                            url: app_logic_url,
                             method: "GET",
                             data: {
                                 request_type: 'DELETE_A_MOVIE',

@@ -1,0 +1,70 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[greek,english]{babel}
+\usepackage{alphabeta}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{epstopdf}
+\usepackage[margin=1in, paperwidth=7.5in,paperheight=10.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{paracol}
+
+\newcommand\course{ΠΛΗ 518}
+\newcommand\courseName{Yπηρεσίες στο Υπολογιστικό Νέφος και την Ομίχλη}
+\newcommand\semester{Χειμερινό 2020-2021}
+\newcommand\assignmentNumber{Αναφορα 2ης Προγραμματιστικής Άσκησης}
+\newcommand\studentName{Μαυρογιώργης Δημήτρης}                           
+\newcommand\studentNumber{2016030016}
+
+\title{\underline{\textbf{\assignmentNumber}}} 
+\author{\textsc{\textbf{Όνομα:}}  \studentName\\
+		\textsc{\textbf{ΑΜ:}}  \studentNumber\\
+		\course \ - \courseName\\ 
+		\textsc{Πολυτεχνείο Κρήτης}
+		}
+\date{\today}
+\begin{document}
+	\maketitle
+	
+\section*{Fiware Keyrock IDM}
+    Για το login και register των χρηστών μέσω του Keyrock, χρησιμοποιούνται αυτούσιες οι σελίδες από την 1 φάση του προτζεκτ. Πιο συγκεκριμενα, για το login στελνονται στον Keyrock το email και το password του χρηστη με grand type 'password', προκειμένου να πάρει ο χρήστης ένα token το οποίο αποθηκεύεται στο session. Επίσης, με ένα δεύτερο request στον Κeyrock παιρνουμε τις πληροφορίες ενός χρήστη, οπώς το user id του στον Κeyrock και το role που του εχει ανατεθεί. Οσον αφορά το register, αρχικά με τα credentials του admin στέλνεται ένα request για τη δημιουργία ενός token. Στη συνέχεια, αυτό το token χρησιμοποιείται στα επόμενα δύο request, στα οποία πρώτα δημιουργούμε ένα χρήστη στον Keyrock και, έπειτα, με δεύτερο request τον κάνουμε authorize στην εφαρμογή και του δίνουμε το role που επέλεξε κατά το register. 
+    
+\section*{Fiware Orion Context Broker}
+    Κατα τη δημιουργία μίας καινούριας ταινίας από έναν cinema owner γινεται παράλληλα create ένα Movie entity με τα ίδια attributes που είχαμε και στην πρώτη φάση του προτζεκτ. Εκτός από τα συγκεκριμένα attributes, προστέθηκαν και άλλα attributes isPlaying και isComing δύο με data type boolean, στα οποία αποθηκεύουμε την πληροφορία α) αν μια ταινία πρόκειται να προβληθεί σε διάστημα μικρότερο ή ίσο των 10 ημερών σε κάποιο σινεμά και β) αν η ταινία που έκανε subscription παίζεται ακόμα σε κάποιο σινεμά. Επίσης, κατα τη διαγραφή μιας ταινίας, γίνεται και διαγραφή του συγκεκριμένου entity που αντιστοιχει στην ταινία που διαγράφτηκε. \\
+    
+    \noindent
+    Οι απλοί χρήστες όταν κάνουν εισαγωγή μιας ταινίας στα αγαπημένα τους, δημιουργείται και ένα subscription στην ταινία που προστέθηκε. Οι χρήστες θα λάβουν ένα notification από τον orion για τις εξής περιπτώσεις: 
+    
+    \begin{itemize}
+        \item[α)] Αν η έναρξη προβολής μια ταινίας πρόκειται να γίνει σε 10 ή λιγότερες μέρες ο χρήστης θα λάβει ένα notification το οποίο θα τον ειδοποιεί ότι η ταινία πρόκειται να προβληθεί σε λιγότερο απο 10 μέρες.
+        \item[β)] Αν η ταινία παίζεται ακόμα ο χρήστης θα λάβει μία ειδοποίηση για την ταινία είναι διαθέσιμη σε κάποιο σινεμά. Αν τώρα ο χρήστης κάνει subscribe σε μια ταινία που έχει περάσει η ημερομηνια προβολής, τότε θα λάβει σχετική ειδοποίηση ότι η τανία δεν είναι διαθέσιμη σε κάποιο από τα διαθέσιμα σινεμά.
+    \end{itemize}
+    
+    \pagebreak
+    \noindent
+    Για το feed των χρηστων μέσω του Orion, ολη η πληροφορία που στέλνει ο Orion για την αλλαγή ενός από τα attribute isPlaying και isComing, Αποθηκεύονται σε ένα collection Notifications, ετσι ώστε ο χρήστης να έχει και ιστορικό όλων των ειδοποιήσεων ακόμα και όταν είναι εκτός εφαρμογής. Επίσης, σε ένα άλλο collection Subscriptions, κρατάμε την πληροφορία ότι ένα συγκεκριμένο subscription id ανήκει σε έναν συγκεκριμένο χρήστη, έτσι ώστε στο feed να επιστρέφονται μόνο οι ειδοποιήσεις που αντιστοιχούν στο συγκεκριμένο χρήστη και όχι κάποιον άλλο.
+\section*{Fiware Wilma Pep Proxy}	
+    Στην εφαρμογη προστέθηκε και η υπηρεσία Wilma Pep Proxy, για να προστατεύει τον orion και το Rest API data storage από κακόβουλους χρήστες. Όλα τα request από την υπηρεσία web app αποστέλονται στο app logic και στη συνέχεια, αντί να χρησιμοποιήσουμε απευθείας τις ip και port του orion και του data storage, στέλνουμε τα request στη Wilma με header X-Auth-token με το magic key που δηλώθηκε κατά το docker compose.
+    
+\section*{Data Storage - Rest API}	
+    Για την εξηπυρέτηση όλων των request προς τη MongoDB με τα δεδομένα των ταινιών, των σινμά και των αγαπημένων, δημιουργήθηκε ένα API το οποίο δέχεται requests με curl από την υπηρεσία app logic. Με βάση τις παραμέτρους (π.χ. user id, movie id κλπ) που αποστέλονται μαζί με το URL κατά το curl και ανάλογα με την παράμετρο request type, κάνουμε εισαγωγές, ενημέρωσεις, διαγραφές και αναζήτησεις στη βάση δεδομένων MongoDB, και επιστρέφουμε τα δεδομένα πίσω στο app logic και έπειτα στο web app, για να προβληθούν στο χρήστη.
+    
+\section*{ΑJAX Requests}
+    Παράλληλα, για οποιαδήποτε λειτουργία εισαγωγής, ενημέρωσης, διαγραφής και αναζήτησης, χρησιμοποιούμε Ajax jqueries για την ανανέωση ενός συγκεκριμένου μέρους της σελίδας και όχι ολόκληρης όπως γίνεται στην περίπτωση του reload. \\
+    
+    \noindent
+    Για την αναζήτηση ταινιών στους χρήστες, έγιναν 2 διαφορετικές αναζητήσεις, καθώς η αναζήτηση με βάση κάποια ημερομηνία στη MongoDB πρέπει να γίνεται με κάποιο εύρος.
+    Πιο συγκεκριμένα, έχουμε τις εξής αναζητήσεις:
+    
+    \begin{itemize}
+        \item[i)] Αναζήτηση με βάση τον τίτλο, την κατηγορία και το όνομα ενός σινεμά. Εδω ψάχνουμε στα αντίστοιχα fields ενός document αν υπάρχει match με βάση ένα regular expression, το οποίο το εισάγειο χρήστης στο search bar.
+        \item[ii)] Aναζήτηση εύρους ημερομηνιών. Ο χρήστης επιλέγει 2 ημερομηνίες και επιστρέφουμε όλες τις ταινίες που έχουν ημερομηνία έναρξης και λήξης εντός αυτού του εύρους.
+    \end{itemize}
+    
+\section*{Migration GCP}	
+    Για το migration σε GCP, δημιουργήθηκε ένα instance με λειτουργικό Ubuntu, εγκαταστάθηκε το Docker Docker-Compose σε αυτό. Στη συνέχεια, μέσω git hub κατέβηκε ο κώδικας μέσα στο VM και με το docker-compose up σηκωθηκε η εφαρμογή. Στην εφαρμογή ολα τα login, register και ανακατευθύνσεις λειτουργούν σωστά. Ωστόσο, δεν λειτουργουν τα Ajax calls.
+\end{document}
